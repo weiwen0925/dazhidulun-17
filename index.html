@@ -4,7 +4,9 @@
 <head>
 <!-- BEGIN wy-preguard -->
 <style id="wy-preguard">html{visibility:hidden!important;}</style>
+<script id="wy-preguard-js">(function(){try{document.documentElement.style.setProperty('visibility','hidden','important');}catch(_){};window.__wy_preguarded=true;})();</script>
 <!-- END wy-preguard -->
+
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>大智度論 · 卷十七 · 釋初品中禪波羅蜜 · 第 1–35 品彙整</title>
@@ -248,8 +250,10 @@ body{font-size:20px!important;}
 
 
 
-<!-- BEGIN wy-full-protection v3-strict -->
-<meta name="wy-full-protection" content="v3-strict">
+
+
+<!-- BEGIN wy-full-protection v4-strict -->
+<meta name="wy-full-protection" content="v4-strict">
 
 <!-- L7 · 反 AI 爬蟲 / archive -->
 <meta name="robots" content="noai, noimageai, noarchive">
@@ -270,8 +274,10 @@ body{font-size:20px!important;}
 
 <script id="wy-bundle-l1-l8-strict">
 /*
- * Strict-Blank 模式：L4/L6/L8 任一失敗，preguard CSS 不移除，
- * 頁面靜默保持空白，無警告文字、無 body 替換。
+ * Strict-Blank 模式 v4：L4/L6/L8 任一失敗 → 永久空白
+ *  - 立刻設 inline style 隱藏 html（不依賴 preguard CSS，避免被 Save Page As 剝離）
+ *  - DOMContentLoaded 時主動清空 body（無 body 即無內容可顯示）
+ *  - MutationObserver 監聽，若有腳本嘗試還原內容也立刻清掉
  *
  * 開發者可隨時 console 查狀態：window.__wyProtectionStatus()
  */
@@ -284,30 +290,85 @@ body{font-size:20px!important;}
   window.__wyOriginOK = false;
   window.__wyFreshOK  = null;
   window.__wyHumanOK  = true;
+  window.__wyBlocked  = false;
 
-  // 移除 preguard（顯示頁面）
+  // 通過所有檢查 → 揭露頁面
   function reveal(){
+    if (window.__wyBlocked) return; // 已被擋，不可揭露
     try {
+      // 1. 移除 preguard CSS
       var pg = document.getElementById("wy-preguard");
       if (pg && pg.parentNode) pg.parentNode.removeChild(pg);
-      // 解除 preguard 後再加保險：強制 html 可見
+      // 2. 清除 inline 隱藏
       if (document.documentElement) {
-        document.documentElement.style.visibility = "visible";
+        document.documentElement.style.removeProperty("visibility");
+        document.documentElement.style.setProperty("visibility", "visible", "important");
+      }
+      if (document.body) {
+        document.body.style.removeProperty("visibility");
       }
     } catch(_) {}
   }
 
-  // 保持空白（什麼都不做，preguard CSS 已生效）
+  // 任一檢查失敗 → 永久空白（不依賴 preguard，inline 為主）
   function stayBlank(reason){
+    window.__wyBlocked = true;
     try { if (typeof console !== "undefined") console.warn("[wy] blocked:", reason); } catch(_) {}
-    // 強保險：把 body 內容直接清掉，避免 view-source 後手動移除 preguard 仍能看到內容
-    // 但這會影響 obfuscation 解碼，所以這裡僅在 protocol 不是 http(s) 才執行
+
+    function _hide(){
+      try {
+        // 1. html inline visibility hidden（即使 preguard CSS 被剝離仍生效）
+        if (document.documentElement) {
+          document.documentElement.style.setProperty("visibility", "hidden", "important");
+          document.documentElement.style.setProperty("opacity", "0", "important");
+        }
+        // 2. body 直接清空 + 隱藏
+        if (document.body) {
+          document.body.style.setProperty("visibility", "hidden", "important");
+          document.body.style.setProperty("display", "none", "important");
+          document.body.innerHTML = "";
+        }
+      } catch(_) {}
+    }
+
+    _hide();
+
+    // body 還沒準備好 → DOMContentLoaded 時再清
+    if (!document.body) {
+      document.addEventListener("DOMContentLoaded", _hide, true);
+      document.addEventListener("readystatechange", _hide, true);
+    }
+
+    // 監聽 DOM 變動，任何嘗試還原內容都立刻清掉
     try {
-      if (location.protocol !== "https:" && location.protocol !== "http:") {
-        // file://、data:// 等開檔場景 → 直接清空
-        if (document.body) document.body.innerHTML = "";
+      if (typeof MutationObserver === "function") {
+        var obs = new MutationObserver(function(muts){
+          // body 一出現就清；body 內容變動也清
+          for (var i=0;i<muts.length;i++) {
+            var m = muts[i];
+            if (m.type === "childList") {
+              if (document.body && document.body.childNodes.length > 0) {
+                _hide();
+              }
+            } else if (m.type === "attributes") {
+              _hide();
+            }
+          }
+        });
+        // 整個 document 都觀察
+        obs.observe(document.documentElement || document, {
+          childList: true, subtree: true, attributes: true,
+          attributeFilter: ["style", "class"]
+        });
       }
     } catch(_) {}
+
+    // 保險：固定間隔再次清空（500ms × 20 次 = 10 秒）
+    var _ti = 0;
+    var _tick = setInterval(function(){
+      _hide();
+      if (++_ti > 20) clearInterval(_tick);
+    }, 500);
   }
 
   // ---- L4 同步 origin 檢查 ----
@@ -389,7 +450,7 @@ body{font-size:20px!important;}
   // 公開狀態查詢
   window.__wyProtectionStatus = function(){
     return {
-      version: "v3-strict",
+      version: "v4-strict",
       mode: "strict-blank",
       origin: window.__wyOriginOK,
       fresh: window.__wyFreshOK,
@@ -398,7 +459,7 @@ body{font-size:20px!important;}
   };
 })();
 </script>
-<!-- END wy-full-protection v3-strict -->
+<!-- END wy-full-protection v4-strict -->
 
 </head>
 <body oncontextmenu="return false" oncopy="return false" oncut="return false" ondragstart="return false" onselectstart="return false">
