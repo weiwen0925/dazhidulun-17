@@ -1734,4 +1734,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P24:END-->
+<!--WY-C17P25:BEGIN-->
+<style id="wy-c17p25-css">
+.c17p25-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p25-fabbox.show{display:block;}
+.c17p25-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p25-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p25-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p25-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p25-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p25-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p25-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p25-modal.open{display:flex;}
+.c17p25-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p25-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p25-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p25-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p25-close:hover{background:#e3d5b8;}
+.c17p25-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p25-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p25-tbl th,.c17p25-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p25-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p25-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p25-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p25-tbl b{color:#8b2500;}
+.c17p25-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p25-note b{color:#8b2500;}
+@media(max-width:900px){.c17p25-fabbox{right:14px;}.c17p25-tbl{font-size:11.5px;}.c17p25-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p25-fabbox" id="c17p25Box"><button class="c17p25-btn" id="c17p25Btn" type="button" aria-label="開啟全景總表"><span class="c17p25-ic">▦</span><span class="c17p25-ls"><span class="c17p25-l1">本品 · 頂禪願智四辯無諍三昧</span><span class="c17p25-l2">四大功德 · 空性妙有</span></span></button></div><div class="c17p25-modal" id="c17p25Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p25-card"><button class="c17p25-close" id="c17p25Close" type="button" aria-label="關閉">×</button><h3>卷十七·第二十五品 頂禪·願智·四辯·無諍三昧 · 全景總表</h3><p class="sub">卷十七・第二十五品｜四功德座標・頂禪轉壽為富・願智三世・四辯・無諍畢竟空止諍</p><table class="c17p25-tbl"><caption>一、四大功德 ── 座標定位（本品主骨架）</caption><thead><tr><th>功德</th><th>座標象限</th><th>核心能力</th><th>界地</th></tr></thead><tbody><tr><td>頂禪</td><td>對外·事</td><td>業力資源重組（轉壽為富/轉富為壽）</td><td>第四禪（頂尖處）</td></tr><tr><td>願智</td><td>對內·事</td><td>三世情報檢索（隨所願則知）</td><td>欲界＋第四禪（二處）</td></tr><tr><td>四辯</td><td>對外·理</td><td>說法溝通堆疊（法/義/辭/樂說）</td><td>法辭辯二處、義樂說辯九地</td></tr><tr><td>無諍三昧</td><td>對內·理</td><td>主動消融諍因（令他心不起諍）</td><td>欲界及四禪（五處）</td></tr></tbody></table><table class="c17p25-tbl"><caption>二、頂禪與願智（業力主權·三世導航）</caption><thead><tr><th>面向</th><th>內容</th></tr></thead><tbody><tr><td>頂禪·權限檢定</td><td>唯「<b>不壞法阿羅漢</b>」（於一切深禪定得自在）能啟動；壞法阿羅漢（定力不堅）無權限</td></tr><tr><td>頂禪·轉壽為富</td><td>轉壽為富、轉富為壽——<b>性空互換</b>；「頂」是定力光譜最高位，反過來調度下位資源</td></tr><tr><td>願智·願定雙引擎</td><td>願（定向指令·以慈悲為動力）＋第四禪定（檢索平台）；起願→入定→出定→了知，隨念皆知</td></tr></tbody></table><table class="c17p25-tbl"><caption>三、四辯與無諍三昧（說法協議·消融諍因）</caption><thead><tr><th>面向</th><th>內容</th></tr></thead><tbody><tr><td>四辯·二元分類</td><td>自體 vs 能力 × 言語層 vs 內涵層——法辯（名句自體）/辭辯（言語能力）/義辯（內涵自體）/樂說辯（應機能力）</td></tr><tr><td>四辯·尋伺界地</td><td>法辯辭辯依尋伺（二處）、義辯樂說辯攝九地——尋伺「大氣層」決定界地分判</td></tr><tr><td>無諍三昧·畢竟空止諍</td><td>非忍辱（壓抑「想反擊」的衝動·對立之因尚在），而是主動消融——讓「諍」在根源處失去所依（預防性·畢竟空止諍）</td></tr></tbody></table><p class="c17p25-note">核心命題：禪定的極致不是「靜」，而是依於空性而生的「功能分化」與「因緣主宰」。四功德以「對內/對外」×「理體/現象」十字軸定位。頂禪與無諍三昧構成完美對偶：頂禪主動重組外在資源（能量調度）、無諍三昧主動消融內在對立之因（空性安住）。《中論》「無自性」演算法在禪定中落地為「轉壽為富」「隨願知三世」「令他心不起諍」的無量妙有。</p></div></div>
+<script id="wy-c17p25-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p25Btn"),BOX=document.getElementById("c17p25Box"),MODAL=document.getElementById("c17p25Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=24;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p25Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P25:END-->
 </body></html>
