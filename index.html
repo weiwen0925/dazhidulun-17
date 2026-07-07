@@ -1416,4 +1416,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P18:END-->
+<!--WY-C17P19:BEGIN-->
+<style id="wy-c17p19-css">
+.c17p19-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p19-fabbox.show{display:block;}
+.c17p19-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p19-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p19-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p19-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p19-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p19-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p19-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p19-modal.open{display:flex;}
+.c17p19-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p19-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p19-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p19-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p19-close:hover{background:#e3d5b8;}
+.c17p19-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p19-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p19-tbl th,.c17p19-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p19-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p19-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p19-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p19-tbl b{color:#8b2500;}
+.c17p19-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p19-note b{color:#8b2500;}
+@media(max-width:900px){.c17p19-fabbox{right:14px;}.c17p19-tbl{font-size:11.5px;}.c17p19-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p19-fabbox" id="c17p19Box"><button class="c17p19-btn" id="c17p19Btn" type="button" aria-label="開啟全景總表"><span class="c17p19-ic">▦</span><span class="c17p19-ls"><span class="c17p19-l1">本品 · 有漏無漏兩種禪定</span><span class="c17p19-l2">借力上攀vs當下解構 · 有頂困境</span></span></button></div><div class="c17p19-modal" id="c17p19Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p19-card"><button class="c17p19-close" id="c17p19Close" type="button" aria-label="關閉">×</button><h3>卷十七·第十九品 有漏無漏兩種禪定 · 全景總表</h3><p class="sub">卷十七・第十九品｜有漏無漏・相待絕待・依上離下・有頂困境・離自地欲・十六聖行</p><table class="c17p19-tbl"><caption>一、有漏道 vs 無漏道 ── 對照矩陣（本品主骨架）</caption><thead><tr><th>維度</th><th>有漏道</th><th>無漏道</th></tr></thead><tbody><tr><td>運作機制</td><td>依上地邊離下地欲</td><td>離自地欲及上地</td></tr><tr><td>邏輯結構</td><td><b>相待</b>（二元對立·欣上厭下）</td><td><b>絕待</b>（自性本空）</td></tr><tr><td>移動方向</td><td>水平位移（換位置，未破平面）</td><td><b>垂直解構</b>（破除整個平面）</td></tr><tr><td>有頂處表現</td><td>機制失效（更無上地邊、上無可欣）</td><td>照常解脫（不假外求）</td></tr><tr><td>最終結果</td><td>三界輪迴</td><td>漏盡涅槃</td></tr></tbody></table><table class="c17p19-tbl"><caption>二、有漏道的力學與死胡同（依上離下 → 有頂困境）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>依上離下</td><td>離下地欲須憑「上地」邊際作支點——從欲界出離須先嚮往色界；<b>解脫依賴對更高階的攀附</b></td></tr><tr><td>欣上厭下</td><td>以「欣」指向上地、「厭」指向下地；不是真斷欲求，而是把欲求重新導向（比較級操作）</td></tr><tr><td>交易邏輯</td><td>以樂易苦、以微細執著替換粗糙執著；建立在「貪」的轉化而非根除</td></tr><tr><td>有頂困境</td><td>攀至非非想（三界之巔），「上地」不存在 → 支點消失（更無上地邊）；欣厭引擎全面熄火，<b>系統性失效</b></td></tr></tbody></table><table class="c17p19-tbl"><caption>三、無漏道的維度轉換（垂直解構·絕待）</caption><thead><tr><th>面向</th><th>內容</th></tr></thead><tbody><tr><td>離自地欲及上地</td><td>不依上/下地，直接在當前所在（自地）以智慧觀照，解構對此地及上地攀附的執著（根本性維度轉換）</td></tr><tr><td>本質論當下解構</td><td>不問「我要去哪裡」，而問「<b>我現在這裡到底是什麼</b>」——從相待切換到絕待</td></tr><tr><td>十六聖行·自性本空</td><td>以苦空無常無我（十六聖行）照見自地與上地皆空；不假外求、不因「無更高可依」而失效</td></tr></tbody></table><p class="c17p19-note">原典「是諸禪定有二種：若有漏若無漏。有漏即凡夫所行；無漏是十六聖行。有漏道依上地邊離下地欲；無漏道離自地欲及上地。凡夫於有頂處不得離欲，更無上地邊故」。有漏道是「<b>借力上攀</b>」（必須有更高處可攀附，到頂便墜回原點，永遠在輪迴路上）；無漏道是「<b>當下解構</b>」（不需更高處，就在當前之地照見本質，當下即解脫）。終極心法：不以此空換彼空，自地無生當下捨。</p></div></div>
+<script id="wy-c17p19-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p19Btn"),BOX=document.getElementById("c17p19Box"),MODAL=document.getElementById("c17p19Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=18;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p19Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P19:END-->
 </body></html>
