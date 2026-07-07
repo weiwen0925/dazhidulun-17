@@ -2105,4 +2105,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P31:END-->
+<!--WY-C17P32:BEGIN-->
+<style id="wy-c17p32-css">
+.c17p32-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p32-fabbox.show{display:block;}
+.c17p32-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p32-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p32-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p32-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p32-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p32-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p32-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p32-modal.open{display:flex;}
+.c17p32-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p32-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p32-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p32-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p32-close:hover{background:#e3d5b8;}
+.c17p32-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p32-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p32-tbl th,.c17p32-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p32-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p32-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p32-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p32-tbl b{color:#8b2500;}
+.c17p32-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p32-note b{color:#8b2500;}
+@media(max-width:900px){.c17p32-fabbox{right:14px;}.c17p32-tbl{font-size:11.5px;}.c17p32-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p32-fabbox" id="c17p32Box"><button class="c17p32-btn" id="c17p32Btn" type="button" aria-label="開啟全景總表"><span class="c17p32-ic">▦</span><span class="c17p32-ls"><span class="c17p32-l1">本品 · 常在禪定而說法</span><span class="c17p32-l2">無功用行 · 阿修羅琴</span></span></button></div><div class="c17p32-modal" id="c17p32Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p32-card"><button class="c17p32-close" id="c17p32Close" type="button" aria-label="關閉">×</button><h3>卷十七·第三十二品 常在禪定而說法 · 全景總表</h3><p class="sub">卷十七・第三十二品｜寂止說法之弔詭・生死人法vs法身菩薩・阿修羅琴・緣起如響・無心而應</p><table class="c17p32-tbl"><caption>一、說法 vs 寂止的雙軌系統（本品主骨架）</caption><thead><tr><th>系統</th><th>內容</th></tr></thead><tbody><tr><td>根本困境</td><td>「常入禪定、攝心不動、不生覺觀」（極靜）與「無量音聲說法度脫」（極動）如何同時成立？（說話必依覺觀思惟，禪定要求心念休止，似水火不容）</td></tr><tr><td>生死人法</td><td>依意識造作的<b>線性輸出</b>——先起語言覺觀，然後說法；動則出定、靜則無言（Samsaric Method）</td></tr><tr><td>法身菩薩</td><td>離生死身，知一切諸法常住如禪定相、本自不亂——<b>無心反射</b>，心無所分別卻能變化無量身說法（寂照同時·Dharmakaya Method）</td></tr></tbody></table><table class="c17p32-tbl"><caption>二、阿修羅琴喻（無功用行·無人彈而自鳴）</caption><thead><tr><th>面向</th><th>內容</th></tr></thead><tbody><tr><td>琴之體</td><td>無作者、無分別、無散心——「無人彈者」</td></tr><tr><td>琴之用</td><td>隨人意出聲——隨聽者心意自動奏出相應樂曲（隨機應化）</td></tr><tr><td>動力來源</td><td><b>福德報生</b>——「是福德報生故，隨人意出聲」；法身菩薩由無量福德、禪定、智慧因緣故，種種法音隨應而出</td></tr></tbody></table><table class="c17p32-tbl"><caption>三、中觀三柱（緣起如響·畢竟空·二諦圓融）</caption><thead><tr><th>柱</th><th>內容</th></tr></thead><tbody><tr><td>緣起如響</td><td>法音是「琴（菩薩法身）＋風（眾生機緣）＋振動」三緣和合的回響，實無獨立「應聲者」（破「有一個發聲者」的執著）</td></tr><tr><td>畢竟空</td><td>正因畢竟空，方能容受萬殊之機而隨機應變</td></tr><tr><td>二諦圓融</td><td>寂（勝義·無言）與動（世俗·有說）分屬二諦，體用一如、並行不悖</td></tr></tbody></table><p class="c17p32-note">經文「爾時菩薩常入禪定，攝心不動，不生覺觀，亦能為十方一切眾生，以無量音聲說法而度脫之，是名禪波羅蜜」。論主的解答不是調和靜與動，而是釜底抽薪否定凡夫對「說法機制」的唯一設定——說法有兩套系統。核心心法「<b>無心而應</b>」：去我執的應對（法在流動，非我在度眾）、能量的轉化（依平時累積的禪定智慧福德）、被動的精準（讓法音由緣起自動催生）。真正的度眾，是在最深的寂靜中響起最震撼的法音。</p></div></div>
+<script id="wy-c17p32-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p32Btn"),BOX=document.getElementById("c17p32Box"),MODAL=document.getElementById("c17p32Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=31;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p32Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P32:END-->
 </body></html>
