@@ -1522,4 +1522,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P20:END-->
+<!--WY-C17P21:BEGIN-->
+<style id="wy-c17p21-css">
+.c17p21-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p21-fabbox.show{display:block;}
+.c17p21-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p21-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p21-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p21-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p21-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p21-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p21-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p21-modal.open{display:flex;}
+.c17p21-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p21-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p21-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p21-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p21-close:hover{background:#e3d5b8;}
+.c17p21-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p21-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p21-tbl th,.c17p21-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p21-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p21-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p21-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p21-tbl b{color:#8b2500;}
+.c17p21-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p21-note b{color:#8b2500;}
+@media(max-width:900px){.c17p21-fabbox{right:14px;}.c17p21-tbl{font-size:11.5px;}.c17p21-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p21-fabbox" id="c17p21Box"><button class="c17p21-btn" id="c17p21Btn" type="button" aria-label="開啟全景總表"><span class="c17p21-ic">▦</span><span class="c17p21-ls"><span class="c17p21-l1">本品 · 修有二種·得修行修</span><span class="c17p21-l2">得修行修 · 體用不二</span></span></button></div><div class="c17p21-modal" id="c17p21Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p21-card"><button class="c17p21-close" id="c17p21Close" type="button" aria-label="關閉">×</button><h3>卷十七·第二十一品 得修·行修 · 全景總表</h3><p class="sub">卷十七・第二十一品｜本所不得而今得・得繩・突破保任・得無所得・體用不二</p><table class="c17p21-tbl"><caption>一、得修 vs 行修 ── 雙軌對比矩陣（本品主骨架）</caption><thead><tr><th>維度</th><th>得修</th><th>行修</th></tr></thead><tbody><tr><td>定義</td><td>本所不得而今得</td><td>曾得，於現前修</td></tr><tr><td>範圍</td><td>亦修餘事（<b>擴散</b>）</td><td>不修餘（<b>聚焦</b>）</td></tr><tr><td>時間軸</td><td>通未來世</td><td>唯在當下</td></tr><tr><td>隱喻</td><td>中樂透/點燈（建立資產）</td><td>花錢/磨鏡（使用資產）</td></tr></tbody></table><table class="c17p21-tbl"><caption>二、業力資產管理與實修切換</caption><thead><tr><th>面向</th><th>內容</th></tr></thead><tbody><tr><td>得修·獲取資產</td><td>無中生有的「入庫註冊」；<b>得繩</b>（跨時空勢能）使功德常存未來世；亦修餘事的連鎖擴散；心法如鑽木取火（未見火光不可停息·猛烈精進）</td></tr><tr><td>行修·運用資產</td><td>調用已有的「調出運用」；如放大鏡聚焦陽光（不新增光而顯灼力）；鎖定當下不修餘；心法如水波蕩漾（綿密保任·數數奉行）</td></tr><tr><td>兩種錯置陷阱</td><td>把得修當行修（該突破時鬆懈守成）、把行修當得修（該保任時強求新得）</td></tr></tbody></table><table class="c17p21-tbl"><caption>三、中觀破立·體用不二（得無所得·三時不可得）</caption><thead><tr><th>破立</th><th>內容</th></tr></thead><tbody><tr><td>得無所得</td><td>若法實有則早已存在何須再得、若法本無如兔角又如何可得 → 勝義中「得」無自性、實無所得（世俗宛然有得、勝義畢竟無得）</td></tr><tr><td>三時不可得</td><td>過去已滅（曾得不可得）·未來未至（不可攀緣）·現在不住（當下亦空）→「行修」只是當下生滅的<b>假名行</b>（有而不執、用而無住）</td></tr><tr><td>體用不二</td><td>得＝存量/體、行＝流量/用；不一不異、圓融無礙；執體廢用則枯寂、執用廢體則漂浮；<b>夢中佛事·水月道場</b>（作而無作、修而無修）</td></tr></tbody></table><p class="c17p21-note">原典「修有二種：一得修，二行修。得修名本所不得而今得，未來世修自事亦修餘事；行修名曾得於現前修，未來亦爾，不修餘」——回應每位禪修者的普遍焦慮「出定之後，辛苦修來的定力功德是否隨之退失？」阿毘達磨建立機制解釋功德如何被儲存、延續、調用。歸於一圓：<b>空有不二的資產調度</b>——既不廢機制的嚴謹（世俗）、也不執其自性（勝義）。</p></div></div>
+<script id="wy-c17p21-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p21Btn"),BOX=document.getElementById("c17p21Box"),MODAL=document.getElementById("c17p21Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=20;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p21Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P21:END-->
 </body></html>
