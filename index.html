@@ -568,4 +568,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P2:END-->
+<!--WY-C17P3:BEGIN-->
+<style id="wy-c17p3-css">
+.c17p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p3-fabbox.show{display:block;}
+.c17p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p3-modal.open{display:flex;}
+.c17p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p3-close:hover{background:#e3d5b8;}
+.c17p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p3-tbl th,.c17p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p3-tbl b{color:#8b2500;}
+.c17p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p3-note b{color:#8b2500;}
+@media(max-width:900px){.c17p3-fabbox{right:14px;}.c17p3-tbl{font-size:11.5px;}.c17p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p3-fabbox" id="c17p3Box"><button class="c17p3-btn" id="c17p3Btn" type="button" aria-label="開啟全景總表"><span class="c17p3-ic">▦</span><span class="c17p3-ls"><span class="c17p3-l1">本品 · 棄色呵聲</span><span class="c17p3-l2">色空間·聲時間 · 觀相不定當下無住</span></span></button></div><div class="c17p3-modal" id="c17p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p3-card"><button class="c17p3-close" id="c17p3Close" type="button" aria-label="關閉">×</button><h3>卷十七·第三品 棄色呵聲 · 全景總表</h3><p class="sub">卷十七・第三品｜色空間聲時間・好惡在人・暫聞即滅・觀相不定當下無住・緣起三時</p><table class="c17p3-tbl"><caption>一、色／聲對稱破斥 ── 空間實體 vs 時間殘響（正交二維）</caption><thead><tr><th>感官</th><th>破斥焦點與經證</th></tr></thead><tbody><tr><td>色（視覺）·空間</td><td>誤認美醜為客體自性（實為主觀投射）；「<b>好惡在人，色無定</b>」——見愛人生喜、見怨家生怒；金火俱捨（不得棄火留金）；頻婆娑羅王身入敵國、憂填王截五百仙人手足</td></tr><tr><td>聲（聽覺）·時間</td><td>「聲相不停，<b>暫聞即滅</b>」，於已過之聲念而生著（意識重播殘影）；五百仙人聞甄陀羅女歌聲即失禪定；<b>念念生滅，前後不俱</b>，無相及者</td></tr></tbody></table><table class="c17p3-tbl"><caption>二、實修心法雙螺旋 ── 觀相不定·當下無住</caption><thead><tr><th>心法</th><th>操作</th></tr></thead><tbody><tr><td>觀相不定（色）</td><td>破除實體投射——遇極美之色，啟「好惡在人」檢驗（若是仇人，此相依舊美嗎？）；認此美為「心中愛火投射」而非客體自性 → 瓦解絕對吸引</td></tr><tr><td>當下無住（聲）</td><td>斬斷時間殘響——凡夫如「刻石為記」讓聲迴盪成癮，智者如「<b>水中畫字</b>」寫完即消、不留殘響；風過樹林，不留痕跡</td></tr></tbody></table><table class="c17p3-tbl"><caption>三、中觀升華 ── 緣起性空·三時不成</caption><thead><tr><th>視角</th><th>推演</th></tr></thead><tbody><tr><td>緣起性空（色無定）</td><td>若美有自性則萬人皆見其美；然見愛生喜、見怨生怒 → 美無自性，依觀者業力情緒分別暫顯（緣起無自性）</td></tr><tr><td>三時不成（聲無常）</td><td>過去之聲已滅（不可得）、現在不住（剎那生滅）、未來未生（不可得）；時間是概念構建，依附時間的聲如幻如響</td></tr><tr><td>二諦總持</td><td>俗諦「却五事」防護 ＋ 勝義諦了知性空；離欲非枯木死灰，而是以最清澈智慧看穿現象界每一次生滅</td></tr></tbody></table><p class="c17p3-note">龍樹對「色」聚焦主觀投射與實體分離之謬（空間與實體層），對「聲」直指時間軸的記憶錯覺（時間與剎那層），一空間、一時間，構成感官執取的兩個正交維度。記憶口訣：沸蜜雖甜燒爛口，洋金熱極且拋走；<b>色無定相緣起生，愛憎全由分別成</b>／聲如風過無停留，念念生滅不可求。本品心印：<b>透視感官的幻象，安住於空性的真實</b>。</p></div></div>
+<script id="wy-c17p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p3Btn"),BOX=document.getElementById("c17p3Box"),MODAL=document.getElementById("c17p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P3:END-->
 </body></html>
