@@ -1628,4 +1628,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P22:END-->
+<!--WY-C17P23:BEGIN-->
+<style id="wy-c17p23-css">
+.c17p23-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p23-fabbox.show{display:block;}
+.c17p23-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p23-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p23-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p23-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p23-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p23-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p23-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p23-modal.open{display:flex;}
+.c17p23-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p23-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p23-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p23-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p23-close:hover{background:#e3d5b8;}
+.c17p23-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p23-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p23-tbl th,.c17p23-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p23-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p23-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p23-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p23-tbl b{color:#8b2500;}
+.c17p23-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p23-note b{color:#8b2500;}
+@media(max-width:900px){.c17p23-fabbox{right:14px;}.c17p23-tbl{font-size:11.5px;}.c17p23-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p23-fabbox" id="c17p23Box"><button class="c17p23-btn" id="c17p23Btn" type="button" aria-label="開啟全景總表"><span class="c17p23-ic">▦</span><span class="c17p23-ls"><span class="c17p23-l1">本品 · 所緣境·滅盡定</span><span class="c17p23-l2">所緣判定 · 心滅境亡</span></span></button></div><div class="c17p23-modal" id="c17p23Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p23-card"><button class="c17p23-close" id="c17p23Close" type="button" aria-label="關閉">×</button><h3>卷十七·第二十三品 所緣境·滅盡定 · 全景總表</h3><p class="sub">卷十七・第二十三品｜所緣境判定・欲界四階・五神通探照燈・滅受想定無所緣・如幻相待畢竟空</p><table class="c17p23-tbl"><caption>一、七類禪定的所緣境判定（本品主骨架）</caption><thead><tr><th>禪法</th><th>所緣範圍</th><th>內在邏輯</th></tr></thead><tbody><tr><td>四無量心/三背捨/八勝處/八一切處</td><td>皆緣欲界</td><td>緣苦發心、轉變物質（發心/解構/主宰/覆蓋）</td></tr><tr><td>五神通</td><td>緣欲、色界</td><td>處理物理現象與質礙（受限探照燈·有質礙）</td></tr><tr><td>滅受想定</td><td>無所緣</td><td>能緣主體暫停、<b>心滅境亡</b></td></tr></tbody></table><table class="c17p23-tbl"><caption>二、欲界四階 ── 心智主權的奪回</caption><thead><tr><th>法門</th><th>作用</th></tr></thead><tbody><tr><td>四無量心</td><td>緣欲界眾生苦相發慈悲喜捨——<b>借假修真</b>，錨定苦境以發起大心（慈悲需具體對象作觸媒）</td></tr><tr><td>三背捨</td><td>緣欲界色身物質——破除對色身貪愛（不淨觀最粗顯樣本在欲界）</td></tr><tr><td>八勝處</td><td>主宰——從「被境轉」翻轉為「主動勝境」</td></tr><tr><td>八一切處</td><td>覆蓋——以一色遍一切處，心智主動重組（「色即是空」的實修預備）</td></tr></tbody></table><table class="c17p23-tbl"><caption>三、中觀三重視角（如幻·相待·畢竟空）</caption><thead><tr><th>視角</th><th>對應</th></tr></thead><tbody><tr><td>如幻觀（欲界諸法）</td><td>欲界色法如夢如幻無自性——「欲界無實，心能轉物」</td></tr><tr><td>相待義（五神通）</td><td>「能見依所見而立」——感知依有質礙之物方能運作（無色界純精神領域，感知工具失效）</td></tr><tr><td>畢竟空（滅受想定）</td><td>「心滅境亡」——能緣心徹底休止，所緣境邏輯上無處立足（心行處滅·契寂滅相）</td></tr></tbody></table><p class="c17p23-note">原典「四無量心、三背捨、八勝處、八一切處皆緣欲界；五神通緣欲、色界；餘各隨所緣；滅受想定無所緣」。所緣範圍逐級縮減（欲界→欲色兩界→無所緣），中觀正見反而逐級深化（如幻→相待→畢竟空）——這就是「<b>剝除能所框架</b>」的層層推進。核心洞見：所緣即心性、事理無礙、<b>修行即解構</b>。</p></div></div>
+<script id="wy-c17p23-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p23Btn"),BOX=document.getElementById("c17p23Box"),MODAL=document.getElementById("c17p23Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=22;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p23Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P23:END-->
 </body></html>
