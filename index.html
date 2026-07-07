@@ -515,4 +515,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C17P1:END-->
+<!--WY-C17P2:BEGIN-->
+<style id="wy-c17p2-css">
+.c17p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c17p2-fabbox.show{display:block;}
+.c17p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c17p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c17p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c17p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c17p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c17p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c17p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c17p2-modal.open{display:flex;}
+.c17p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c17p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c17p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c17p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c17p2-close:hover{background:#e3d5b8;}
+.c17p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c17p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c17p2-tbl th,.c17p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c17p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c17p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c17p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c17p2-tbl b{color:#8b2500;}
+.c17p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c17p2-note b{color:#8b2500;}
+@media(max-width:900px){.c17p2-fabbox{right:14px;}.c17p2-tbl{font-size:11.5px;}.c17p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c17p2-fabbox" id="c17p2Box"><button class="c17p2-btn" id="c17p2Btn" type="button" aria-label="開啟全景總表"><span class="c17p2-ic">▦</span><span class="c17p2-ls"><span class="c17p2-l1">本品 · 呵五欲總論·却五事</span><span class="c17p2-l2">八喻三苦 · 對治入實相</span></span></button></div><div class="c17p2-modal" id="c17p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c17p2-card"><button class="c17p2-close" id="c17p2Close" type="button" aria-label="關閉">×</button><h3>卷十七·第二品 呵五欲·却五事 · 全景總表</h3><p class="sub">卷十七・第二品｜却五事除五法行五行・五欲八喻・呵責機制・雪山石窟・二諦融通</p><table class="c17p2-tbl"><caption>一、五欲八大譬喻 ── 三類苦矩陣</caption><thead><tr><th>類別</th><th>譬喻與義</th></tr></thead><tbody><tr><td>得時之苦</td><td>火炙疥（得之轉劇，越抓越劇）·踐惡蛇（害人）·逆風執炬（燒人）</td></tr><tr><td>代價之苦</td><td>狗齩骨（無益）·鳥競肉（增諍）·蜜塗刀（舐甜傷舌——得須臾樂、失時大苦）</td></tr><tr><td>無實之苦</td><td>夢所得（無實）·假借須臾（不久）——五欲法者與畜生共</td></tr></tbody></table><table class="c17p2-tbl"><caption>二、呵責的機制 ── 壓抑 vs 覺照</caption><thead><tr><th>進路</th><th>機制</th><th>結果</th></tr></thead><tbody><tr><td>世俗認知·壓抑</td><td>視慾望為快樂，靠意志力強行阻斷；認知未動搖，僅行為對抗</td><td>反彈強烈、內心增諍、愈抑愈熾</td></tr><tr><td>智者認知·覺照</td><td>深刻洞察慾望的副作用與毀滅性，從認知根部瓦解「慾望＝快樂」前提</td><td>「<b>有智者識之，能自遠離</b>」——自然遠離，不費力</td></tr></tbody></table><table class="c17p2-tbl"><caption>三、對治道 → 實相道（雪山石窟公案·二諦融通）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>雪山石窟公案</td><td>夜行失伴·石窟閉境（極端孤立＝却五事實驗場）；山神變女來試，優婆塞掩耳呵責、金剛決心</td></tr><tr><td>對治道</td><td>却五事＋八譬喻＋雙層防禦；前提「五欲實有，故須對治」；如倒毒水——能呵之心 vs 所呵之欲仍二元，久生疲勞</td></tr><tr><td>實相道</td><td><b>如夢觀</b>（五欲無實、本無自體）·緣起觀·不二觀；如徹見「此水本無」</td></tr><tr><td>二諦融通</td><td>俗諦嚴格防護（掩耳呵責）＋真諦安住無生（了知如幻）；無俗諦防護則墮<b>狂禪</b>，無真諦觀照則<b>枯木死灰</b></td></tr></tbody></table><p class="c17p2-note">論主設問「<b>行何方便，得禪波羅蜜？</b>」答「却五事（五塵）、除五法（五蓋）、行五行」——却（推却外境五塵）／除（淨化內心五蓋）／行（發起入定動力），正對應外防—內淨—動力三層。四句口訣：五欲如火炙疥瘡→緣起苦觀／如夢如借非真常→性空觀／蜜刀狗骨害人傷→過患觀／掩耳呵責心如鋼→對治觀。退隱山林非消極逃避，而是主動建立防護網、構建容納禪定甘露的「無漏容器」。</p></div></div>
+<script id="wy-c17p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c17p2Btn"),BOX=document.getElementById("c17p2Box"),MODAL=document.getElementById("c17p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c17p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C17P2:END-->
 </body></html>
