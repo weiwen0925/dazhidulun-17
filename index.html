@@ -2965,4 +2965,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P3:END-->
+<!--WY-BH17P4:BEGIN-->
+<style id="wy-bh17p4-css">
+.bh17p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p4-fabbox.show{display:block;}
+.bh17p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p4-modal.open{display:flex;}
+.bh17p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p4-close:hover{background:#dde2e6;}
+.bh17p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p4-tbl th,.bh17p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p4-tbl thead th:nth-child(1){width:32%;}.bh17p4-tbl thead th:nth-child(2){width:41%;}.bh17p4-tbl thead th:nth-child(3){width:27%;}
+.bh17p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p4-guan{background:#eef2f5;color:#37505f;}
+.bh17p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p4-tbl tbody tr:nth-child(even) td.bh17p4-guan{background:#e8eef2;}
+.bh17p4-tbl tbody tr:nth-child(even) td.bh17p4-qa{background:#e7ecdb;}
+.bh17p4-tbl b{color:#8b2500;}
+.bh17p4-guan b{color:#2f6b5a;}
+.bh17p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p4-fabbox{right:14px;}.bh17p4-tbl{font-size:11px;}.bh17p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p4-fabbox" id="bh17p4Box"><button class="bh17p4-btn" id="bh17p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p4-ic">譯</span><span class="bh17p4-ls"><span class="bh17p4-l1">本品 · 原文·白話·中觀</span><span class="bh17p4-l2">白話翻譯表</span></span></button></div><div class="bh17p4-modal" id="bh17p4Modal" role="dialog" aria-modal="true"><div class="bh17p4-card"><button class="bh17p4-close" id="bh17p4Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第4品 白話翻譯表（呵香）</h3><p class="sub">大智度論卷十七·呵香 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p4-tbl"><caption>呵香 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p4-src">云何呵香？人謂著香少罪，染愛於香，開結使門；雖復百歲持戒，能一時壞之。</td><td>什麼叫做呵責香欲呢？人們往往以為貪著香氣只是很輕微的過失，殊不知一旦染著愛戀於香氣，就等於為煩惱結使打開了大門；縱使持戒修行了一百年，貪香之心一旦生起，也能在頃刻之間把多年的戒行毀壞殆盡。</td><td class="bh17p4-guan"><b>輕忽之過即致命之因</b>——世人常以五欲中「香」最為細微、無傷大雅，然而正因其看似無害才最易鬆懈防護；百歲持戒毀於一旦，點出結使不論粗細，只要染著生根便足以顛覆整體修行，此即「莫因惡小而輕忽」的警覺。</td></tr><tr><td class="bh17p4-src">如一阿羅漢常入龍宮，食已，以鉢授與沙彌令洗；鉢中有殘飯數粒，沙彌嗅之大香，食之甚美。便作方便，入師繩床下，兩手捉繩床腳；其師至時，與繩床俱入龍宮。</td><td>譬如有一位阿羅漢經常前往龍宮應供，吃完飯後，把鉢交給隨侍的沙彌去清洗；鉢中還殘留著幾粒飯粒，沙彌一聞香氣撲鼻，嚐了一口滋味十分美妙。於是便想方設法，偷偷躲進師父的繩床底下，雙手緊緊抓住繩床的腳；等到師父要前往龍宮時，便連人帶繩床一起被帶入了龍宮。</td><td class="bh17p4-guan"><b>一念貪香·身隨心動</b>——沙彌本無資格隨師入龍宮，僅因鼻識一嗅殘飯之香，便設計躲藏隨行；可見「香」雖是五欲中最細微者，卻足以驅動整個身業的造作，貪愛一旦生起，行動便不由自主地被牽引。</td></tr><tr><td class="bh17p4-src">龍言：「此未得道，何以將來？」師言：「不覺。」沙彌得飯食之，又見龍女身體端正，香妙無比，心大染著，即作要願：「我當作福，奪此龍處，居其宮殿！」龍言：「後莫將此沙彌來！」</td><td>龍王見了說：「這人尚未證道，為何把他也帶來了？」師父說：「我沒有察覺。」沙彌吃到了龍宮的飯食，又見到龍女容貌端正、香氣美妙無比，心中生起強烈的染著貪愛，便立下誓願：「我將來要修福德，奪取這龍王的居處，住進他的宮殿裡！」龍王聽了便說：「以後不要再把這個沙彌帶來了！」</td><td class="bh17p4-guan"><b>願力隨貪愛而轉向</b>——沙彌一見龍女之香妙，貪染便已生根，甚至進一步扭曲了修行的願力方向，由求道轉為求奪龍宮；可見「香」看似只是嗅根對境，實則能牽動意根深處的願欲，是結使入侵最隱微卻最具滲透力的孔道。</td></tr><tr><td class="bh17p4-src">沙彌還已，一心布施、持戒，專求所願，願早作龍。是時遶寺，足下水出，自知必得作龍。徑至師本入處大池邊，以袈裟覆頭而入，即死，變為大龍；福德大故，即殺彼龍，舉池盡赤。未爾之前，諸師及僧呵之。沙彌言：「我心已定，心相已出。」時，師將諸眾僧，就池觀之。如是因緣，由著香故。</td><td>沙彌回到寺裡之後，便一心修習布施、堅守戒律，一心一意只求先前所發的誓願能夠實現，盼望早日投生做龍。這時他繞著寺院行走，腳下竟湧出水來，他自己便知道必定能夠成就作龍的果報。於是他徑直走到師父先前進入龍宮的那座大池邊，用袈裟蒙住頭便投身入池，當下便死去，轉生變成一條大龍；由於他所修福德深厚，隨即殺了原本住在池中的那條龍，把整座水池都染成一片血紅。在這件事發生之前，其他師父與僧眾都曾呵責勸阻過他，沙彌卻說：「我的心意已經堅定，心中的徵兆也已經顯現出來了。」到了那時，師父便帶領全體僧眾一同前往水池邊觀看究竟。像這樣的因緣，都是由於貪著香氣而引發的。</td><td class="bh17p4-guan"><b>福業與貪願同時運作·果報隨心念鑄形</b>——沙彌以清淨的布施持戒之因，卻承載著染著求龍之願，福德與貪愛竟能同時增長並共同結果，顯示業力本身並無善惡定性，關鍵在於推動業力的那一念「所求」；心念如模具，即便修行資糧清淨，一旦被貪愛的意樂引導，照樣能鑄造出違逆道業的果報。</td></tr><tr><td class="bh17p4-src">復次，有一比丘在林中蓮華池邊經行，聞蓮華香，其心悅樂，過而心愛。池神語之言：「汝何以故捨彼林下禪淨坐處而偷我香？以著香故，諸結使臥者皆起。」</td><td>再者，有一位比丘在樹林中的蓮花池邊經行，聞到蓮花的香氣，心中感到愉悅歡喜，經過之後仍念念不忘、心生愛戀。池中的守護神便對他說：「你為什麼捨棄樹林下清淨的禪坐之處，反而跑來偷取我池中的香氣呢？就因為你貪著這香氣，原本已經潛伏平息的種種煩惱結使，全都被喚醒生起了。」</td><td class="bh17p4-guan"><b>經行本為淨業·一念貪香即成偷</b>——比丘原是在修習禪坐正業的路途中，僅僅是「經過」香氣、生起片刻悅樂之心，池神便直斥為「偷」；可見罪業的成立不在外在動作是否取用，而在內心是否生起染著的能所對待，一旦心念攀緣外境，煩惱結使便已由潛伏轉為現行。</td></tr><tr><td class="bh17p4-src">時，更有一人，來入池中，多取其花，掘挽根莖，狼籍而去；池神默無所言。比丘言：「此人破汝池，取汝花，汝都無言；我但池岸邊行，便見呵罵，言偷我香！」</td><td>這時，又有另一個人走進池中，大肆採摘蓮花，還連根莖都一併挖掘拔取，弄得池中一片狼藉才離去；池神對此卻默然不語、毫無怨言。比丘便說：「這個人破壞了你的池子，摘走了你的花，你竟然一句話都不說；我只不過是在池岸邊走過，就被你呵責辱罵，說我偷了你的香氣！」</td><td class="bh17p4-guan"><b>外相破壞輕·內心染著重</b>——同樣面對「取花」與「聞香」兩種行為，破壞外相者未受呵責，僅心生愛著者卻遭嚴詞責備，比丘之惑正顯示世間常以外在行為的輕重衡量過失，卻忽略修行所觀照的其實是內在心念染著的深淺，為下文池神開示「淨心」與「垢心」有別預作鋪墊。</td></tr><tr><td class="bh17p4-src">池神言：「世間惡人常在罪垢糞中，不淨沒頭，我不共語也。汝是禪行好人而著此香，破汝好事，是故呵汝！譬如白疊鮮淨而有黑物點污，眾人皆見；彼惡人者，譬如黑衣點墨，人所不見，誰問之者！」</td><td>池神回答說：「世間的惡人經常整個人埋沒在罪惡污穢的糞坑之中，早已渾身不淨，我根本不屑與他計較、不與他說話。而你是修習禪定的清淨好人，卻在此貪著這香氣，敗壞了你原本清淨的修行道業，所以我才要呵責你！這就好比一塊潔白鮮淨的布疋，若沾染了一點黑色的污漬，眾人都會一眼看見；而那個惡人，就像是本來就漆黑的衣服上又添了一點墨漬，根本沒有人看得出來，又有誰會去追究責問他呢！」</td><td class="bh17p4-guan"><b>白疊點墨之喻·清淨心染即顯</b>——此喻精妙點出染著之過並非以行為的絕對量來衡量，而是相對於當事人心地清淨程度而顯現；禪行者心地本淨，一念香染便如白布著墨、纖毫畢現，而惡人心地本濁，縱使造作重罪也難以察覺——這正呼應「相待假名」之理：罪相之輕重顯隱，皆依待於觀待的心地背景而安立，並無獨立自存的定量標準。</td></tr><tr><td class="bh17p4-src">如是等種種因緣，是名呵香欲。</td><td>由於像這樣種種的因緣道理，這就叫做呵責香欲。</td><td class="bh17p4-guan"><b>結語收攝·因緣即是教法</b>——以上龍宮沙彌、蓮池比丘兩則因緣，並非單純的勸誡寓言，而是藉事顯理的教學方式：透過具體因緣觀照香欲染著之過患與心地清淨之理，最終仍收攝回「諸法因緣生」的根本觀照——呵香非厭香之自性，而是照破對香生起染著的那一念虛妄分別。</td></tr></tbody></table><p class="bh17p4-note">大智度論卷十七第4品「呵香」原文·白話·中觀三欄對照。呵香：龍宮沙彌貪香染願、蓮池比丘白疊點墨</p></div></div>
+<script id="wy-bh17p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p4Btn"),BOX=document.getElementById("bh17p4Box"),MODAL=document.getElementById("bh17p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p4Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P4:END-->
 </body></html>
