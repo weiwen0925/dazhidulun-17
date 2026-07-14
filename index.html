@@ -2812,4 +2812,55 @@ if(toc&&"IntersectionObserver" in window){
 }else{var ref=function(){var t=toc?toc.getBoundingClientRect().bottom:600;show(t>60);};window.addEventListener("scroll",ref,{passive:true});ref();}
 })();</script>
 <!--WY-BHALL17:END-->
+<!--WY-BH17P1:BEGIN-->
+<style id="wy-bh17p1-css">
+.bh17p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p1-fabbox.show{display:block;}
+.bh17p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p1-modal.open{display:flex;}
+.bh17p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p1-close:hover{background:#dde2e6;}
+.bh17p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p1-tbl th,.bh17p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p1-tbl thead th:nth-child(1){width:32%;}.bh17p1-tbl thead th:nth-child(2){width:41%;}.bh17p1-tbl thead th:nth-child(3){width:27%;}
+.bh17p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p1-guan{background:#eef2f5;color:#37505f;}
+.bh17p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p1-tbl tbody tr:nth-child(even) td.bh17p1-guan{background:#e8eef2;}
+.bh17p1-tbl tbody tr:nth-child(even) td.bh17p1-qa{background:#e7ecdb;}
+.bh17p1-tbl b{color:#8b2500;}
+.bh17p1-guan b{color:#2f6b5a;}
+.bh17p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p1-fabbox{right:14px;}.bh17p1-tbl{font-size:11px;}.bh17p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p1-fabbox" id="bh17p1Box"><button class="bh17p1-btn" id="bh17p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p1-ic">譯</span><span class="bh17p1-ls"><span class="bh17p1-l1">本品 · 原文·白話·中觀</span><span class="bh17p1-l2">白話翻譯表</span></span></button></div><div class="bh17p1-modal" id="bh17p1Modal" role="dialog" aria-modal="true"><div class="bh17p1-card"><button class="bh17p1-close" id="bh17p1Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第1品 白話翻譯表（禪波羅蜜序分核心悖論）</h3><p class="sub">大智度論卷十七·禪波羅蜜序分核心悖論 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p1-tbl"><caption>禪波羅蜜序分核心悖論 · 原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p1-src">「不亂不味故，應具足禪波羅蜜。」</td><td>由於「不散亂、不貪著禪味」的緣故，應當具足禪波羅蜜。</td><td class="bh17p1-guan"><b>雙重遮遣立宗</b>——經文以「不亂」「不味」兩重否定同時界定禪波羅蜜的範圍：不亂對治外境紛擾，不味對治內執禪樂；兩邊俱遣，正是中觀「不著二邊」的宗要，禪波羅蜜由此非耽定亦非隨俗，而是中道而行。</td></tr><tr><td class="bh17p1-qa">問曰：菩薩法以度一切眾生為事，何以故閑坐林澤、靜默山間、獨善其身、棄捨眾生？</td><td>問：菩薩之法本以度化一切眾生為己任，為什麼卻要閑坐在山林曠野之間、靜默獨處於山間，只顧自己修善，捨棄了眾生呢？</td><td class="bh17p1-guan"><b>設難以顯權實不二</b>——此問直指菩薩道表面上的矛盾：利他本願與獨處修禪似乎彼此扞格；此設問手法正是為了引出下文「身遠心近」的解答，逼顯出禪定與度生並非對立的兩橛，而是同一菩提道用的不同施設面向。</td></tr><tr><td class="bh17p1-qa">答曰：菩薩身雖遠離眾生，心常不捨。靜處求定、獲得實慧，以度一切。</td><td>答：菩薩的身雖然暫時遠離了眾生，但心中卻從未捨棄眾生。他在寂靜之處求證禪定、獲得真實智慧，正是為了以此來度化一切眾生。</td><td class="bh17p1-guan"><b>身遠心近·權巧不離悲願</b>——「身遠心不捨」點出菩薩行的關鍵結構：外在行相（獨處禪修）只是緣起施設的方便，內在悲願（度眾之心）才是不變的核心；身與心在此呈現「假名安立」的兩層——形式上的靜默不妨礙、反而成就實質上度生智慧的積累。</td></tr><tr><td class="bh17p1-src">譬如服藥，將身權息家務；氣力平健，則修業如故。</td><td>譬如生病服藥調養時，會暫且放下家中事務讓身體休息；等到氣力恢復強健之後，便照常繼續原本的事業。</td><td class="bh17p1-guan"><b>權息為復用之方便</b>——服藥息務的譬喻說明「暫時止息」本身不是目的，而是為了恢復更完整的功能；禪定之「靜」與度生之「動」正是同一結構的兩階段，靜非棄捨動，而是動力積蓄的必要環節，二者相依而非相斥。</td></tr><tr><td class="bh17p1-src">菩薩宴寂亦復如是：以禪定力故，服智慧藥，得神通力；還在眾生，或作父母妻子，或作師徒宗長，或天或人，下至畜生，種種語言，方便開導。</td><td>菩薩安坐禪定也是如此：憑藉禪定之力，服下智慧良藥，獲得神通之力；然後重新回到眾生之中，或化現為父母妻子，或化現為師長宗族，或化現為天人，乃至下至畜生之身，以種種不同的語言，方便地開導眾生。</td><td class="bh17p1-guan"><b>神通還入·隨類示現無自性</b>——菩薩以禪定所得神通力「還在眾生」中隨類化現，父母、師長、天人乃至畜生等等身分皆是隨緣示現的假名施設，並無一個固定不變的「菩薩相」；正因諸相本空，才能無礙地隨眾生根機示現種種身分而說法。</td></tr><tr><td class="bh17p1-src">布施、持戒、忍辱、精進，四事之福，可得世間果報、人天富樂；然此福德如諸珍寶，終有盡時；非永住之樂、非常樂涅槃。</td><td>布施、持戒、忍辱、精進，這四種修行所得的福報，能招感世間的果報，獲得人間與天上的富貴安樂；然而這種福德就如同各種珍寶一樣，終究有耗盡的時候；並不是永恆常住的安樂，也不是究竟常樂的涅槃。</td><td class="bh17p1-guan"><b>有為福德終歸無常</b>——布施等四度所感之福雖真實不虛，卻仍屬因緣所生的有為果報，故如珍寶終有窮盡之時；此段為下文「禪生實慧、實慧生常樂涅槃」的論證預留對比座標——凡是因緣和合而生者，皆不能等同於離於生滅的涅槃常樂。</td></tr><tr><td class="bh17p1-src">常樂涅槃，從實智慧生；實智慧，從一心禪定生。譬如然燈，燈雖能照，在大風中，則不能用；若置之密宇，其用乃全。散心之中，雖有智慧，亦如風中之燈；不能照物。若置之禪定密宇之中，智慧之燈乃能破暗、照了諸法。</td><td>究竟常樂的涅槃，是從真實智慧產生的；而真實智慧，則是從專一不亂的禪定中產生的。就好比點燃的油燈，燈火雖然能夠照明，但若處在大風之中，就無法發揮作用；如果把它安放在密閉的屋室之中，它的作用才能完全發揮。散亂心中雖然也有智慧，但就如同風中的燈火一樣，無法真正照亮萬物；只有把它安放在禪定這間密室之中，智慧的燈火才能破除黑暗、如實照見一切諸法。</td><td class="bh17p1-guan"><b>定慧相資·風燈之喻</b>——風中燈喻精準點出「智慧」需要「禪定」作為安住之緣：智慧本身並非因禪定而「新生」出一種能力，而是禪定提供了讓智慧如實運作、不被散亂習氣遮蔽的緣起條件；定與慧非一非異，正如燈與密室，彼此互為增上緣而共成「照了諸法」之實相知見。</td></tr><tr><td class="bh17p1-src">眾因緣生法　　我說即是無　亦為是假名　　亦是中道義　——《中論·觀四諦品》</td><td>一切由眾多因緣和合而生起的法，我說它就是空無自性的；但這空性同時也只是一個假施設的名字，而能夠這樣理解（既空、又假、又不落兩邊），正是所謂「中道」的意涵。</td><td class="bh17p1-guan"><b>三是偈·空假中三諦圓融</b>——此偈是中觀學派最核心的綱領：緣生之法無自性故「空」，然空非斷滅，仍依世俗假名而有施設作用故「假」，能同時如實照見空與假而不偏執一邊，即是「中道」；本品所論禪定之「不亂不味」，正是此三諦圓融在禪修實踐上的具體展開——不執取禪相為實有（空），亦不廢禪定之用（假），二者無礙即是中道禪波羅蜜。</td></tr><tr><td class="bh17p1-src">世尊成道已，獨坐尼拘盧樹下，魔王見之不悅，遣其三女：愛欲、能悅、可愛樂，現種種妙形、作種種妙音，以亂其心。三女問曰：『大士獨坐林樹間，無有伴侶，孤寂如是，何所樂為？』</td><td>世尊成道之後，獨自安坐在尼拘盧樹下，魔王見了心中不悅，便派遣自己的三個女兒——愛欲、能悅、可愛樂——前去擾亂佛陀。三女現出種種美妙的形貌、發出種種美妙的聲音，想要擾亂佛陀的心。三女問道：『大士您獨自坐在林間樹下，沒有任何伴侶陪同，如此孤獨寂寞，這樣做究竟有什麼樂趣呢？』</td><td class="bh17p1-guan"><b>魔女試探·反顯禪悅非世間樂</b>——魔女以世俗「伴侶之樂」的標準來質疑佛陀獨坐之樂，恰恰暴露了世間樂與禪悅的本質差異：世間樂依賴外境和合（伴侶、妙色妙聲）而生，屬因緣所成、故不安不常；而佛陀的禪悅安住於離妄實相，不假外緣扶持，故魔女的妙形妙音對之毫無作用力——此段為下文佛陀如何應答魔女、開顯禪定真樂鋪墊張本。</td></tr><tr><td class="bh17p1-src">「不亂不味故，應具足禪波羅蜜。」　——《摩訶般若波羅蜜經·初品》</td><td>「由於不散亂、不貪著禪味的緣故，應當具足禪波羅蜜。」——出自《摩訶般若波羅蜜經·初品》</td><td class="bh17p1-guan"><b>首尾迴環·以經證論收束全品</b>——全品以此經文起始破題、亦以此經文引證收束，形成首尾呼應的迴環結構；前文所展開的「身遠心近」「定慧相資」「三是偈」等層層論證，最終仍歸攝於這一句經文所立的宗要——不亂不味、具足禪波羅蜜，全品義理由此渾然一體。</td></tr></tbody></table><p class="bh17p1-note">大智度論卷十七第1品「禪波羅蜜序分核心悖論」原文·白話·中觀三欄對照。禪波羅蜜序分核心悖論：不亂不味經文起結、身遠心不捨、風燈定慧之喻、中論三是偈、魔女試探</p></div></div>
+<script id="wy-bh17p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p1Btn"),BOX=document.getElementById("bh17p1Box"),MODAL=document.getElementById("bh17p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p1Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P1:END-->
 </body></html>
