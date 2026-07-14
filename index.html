@@ -3781,4 +3781,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P19:END-->
+<!--WY-BH17P20:BEGIN-->
+<style id="wy-bh17p20-css">
+.bh17p20-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p20-fabbox.show{display:block;}
+.bh17p20-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p20-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p20-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p20-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p20-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p20-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p20-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p20-modal.open{display:flex;}
+.bh17p20-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p20-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p20-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p20-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p20-close:hover{background:#dde2e6;}
+.bh17p20-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p20-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p20-tbl th,.bh17p20-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p20-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p20-tbl thead th:nth-child(1){width:32%;}.bh17p20-tbl thead th:nth-child(2){width:41%;}.bh17p20-tbl thead th:nth-child(3){width:27%;}
+.bh17p20-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p20-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p20-guan{background:#eef2f5;color:#37505f;}
+.bh17p20-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p20-tbl tbody tr:nth-child(even) td.bh17p20-guan{background:#e8eef2;}
+.bh17p20-tbl tbody tr:nth-child(even) td.bh17p20-qa{background:#e7ecdb;}
+.bh17p20-tbl b{color:#8b2500;}
+.bh17p20-guan b{color:#2f6b5a;}
+.bh17p20-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p20-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p20-fabbox{right:14px;}.bh17p20-tbl{font-size:11px;}.bh17p20-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p20-fabbox" id="bh17p20Box"><button class="bh17p20-btn" id="bh17p20Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p20-ic">譯</span><span class="bh17p20-ls"><span class="bh17p20-l1">本品 · 原文·白話·中觀</span><span class="bh17p20-l2">白話翻譯表</span></span></button></div><div class="bh17p20-modal" id="bh17p20Modal" role="dialog" aria-modal="true"><div class="bh17p20-card"><button class="bh17p20-close" id="bh17p20Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第20品 白話翻譯表（斷惑修得捨離九品煩惱）</h3><p class="sub">大智度論卷十七·斷惑修得捨離九品煩惱 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p20-tbl"><caption>斷惑修得捨離九品煩惱 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p20-src">「若佛弟子欲離欲界欲，欲界煩惱思惟斷九種：上、中、下——上上、上中、上下，中上、中中、中下，下上、下中、下下。」</td><td>如果佛弟子想要脫離欲界的貪欲，欲界的煩惱依修行斷除的次第可分為九種：上、中、下三大類，每一類又各分上中下三品，即上上、上中、上下，中上、中中、中下，下上、下中、下下，共九品。</td><td class="bh17p20-guan"><b>假名施設·九品分位非有實體</b>——煩惱的粗細本無截然可分的疆界，論主卻依修行對治的次第，將其細分為上中下三品、再各分三品，成就九品之說；此一分位純屬修行次第上的假名施設，用以精確標定對治的階次，並非煩惱本身具有九個獨立自性的實體區塊——正如尺度上的刻度是人為施設，煩惱之粗細亦復如是，依因待緣而立九品之名。</td></tr><tr><td class="bh17p20-src">斷此九種故，佛弟子若依有漏道欲得初禪，是時於未到地九無礙道、八解脫道中，現在修有漏道，未來修有漏、無漏道。第九解脫道中，於未到地現在修有漏道，未來修未到地有漏、無漏道，及初禪邊地有漏。若無漏道欲得初禪，亦如是。</td><td>為了斷除這九種煩惱，佛弟子如果依循有漏道想要證得初禪，這時在未到地（初禪前的預備地）的九個無礙道、八個解脫道之中，當下修習的是有漏道，未來則同時修習有漏道與無漏道。到了第九解脫道時，在未到地當下修習有漏道，未來則修習未到地的有漏、無漏道，以及初禪邊地的有漏善根。如果是依循無漏道想要證得初禪，情形也是如此。</td><td class="bh17p20-guan"><b>現在修·未來修的雙軌資產累積</b>——「現在修」是當下正在對治的一念，「未來修」則是同時被牽動、一併薰習成就的相關善根；有漏道與無漏道在同一斷惑歷程中並行不悖、彼此增上，顯示修行並非單線孤立的因果，而是一因多果、重重相資的緣起網絡——這正呼應了下文（品21）「得修」機制「未來世修自事，亦修餘事」的義理，二者本是同一緣起結構在不同品目中的展開。</td></tr><tr><td class="bh17p20-src">若依有漏道離初禪欲，於第二禪邊地九無礙道、八解脫道中，現在修二禪邊地有漏，未來修二禪邊地有漏道，亦修無漏初禪及眷屬。第九解脫道中，於第二禪邊地，現在修二禪邊地有漏道，未來修二禪邊地、初禪無漏及眷屬、二禪淨、無漏。</td><td>如果依循有漏道想要脫離初禪的貪欲，在第二禪邊地的九個無礙道、八個解脫道之中，當下修習的是第二禪邊地的有漏善根，未來則修習第二禪邊地的有漏道，也同時修習無漏的初禪及其眷屬功德。到了第九解脫道時，在第二禪邊地，當下修習第二禪邊地的有漏道，未來則修習第二禪邊地、初禪的無漏及其眷屬功德，以及第二禪的清淨無漏善根。</td><td class="bh17p20-guan"><b>邊地為樞紐·跨地資產同步累積</b>——「邊地」（禪定與禪定之間的過渡地帶）在此扮演樞紐角色：行者在邊地當下用功，其功德卻能同步跨越到已離之地（初禪）與將趣之地（二禪）兩端，形成跨層級的資產轉移；這說明禪定次第之間並無截然分割的自性疆界，一切修證皆依相續不斷的因緣鏈而彼此滲透、交互增上，正是緣起法「此有故彼有」的具體修證版本。</td></tr><tr><td class="bh17p20-src">若無漏道離初禪欲，九無礙道、八解脫道中，現在修自地無漏道，未來修初禪及眷屬有漏、無漏道。第九解脫道中，現在修自地無漏道，未來修初禪及眷屬有漏、無漏道，及修二禪淨、無漏。</td><td>如果依循無漏道想要脫離初禪的貪欲，在九個無礙道、八個解脫道之中，當下修習的是自身所在地的無漏道，未來則修習初禪及其眷屬的有漏、無漏道。到了第九解脫道時，當下修習自身所在地的無漏道，未來則修習初禪及其眷屬的有漏、無漏道，以及第二禪的清淨無漏善根。</td><td class="bh17p20-guan"><b>無漏道全面覆蓋·不假憑藉上地</b>——相較於有漏道須憑藉「邊地」作為過渡樞紐，無漏道行者當下即修「自地無漏道」，不必仰賴上一地作為相待的參照點，便能同時涵蓋前後多地的善根；此正顯示無漏智慧照見諸法實相之力，能超越有漏道那種「依待他地方能運作」的局限結構，體現般若正見在修證效益上的殊勝之處。</td></tr><tr><td class="bh17p20-src">乃至無所有處離欲時，亦如是。</td><td>乃至修到無所有處而要脫離其貪欲時，情況也是如此（比照前面初禪、二禪離欲的模式類推）。</td><td class="bh17p20-guan"><b>通則類推·同一緣起結構貫穿諸地</b>——論主以「亦如是」一語，將前文初禪、二禪離欲的運作模式類推至三禪、四禪乃至空無邊處、識無邊處、無所有處等各地，顯示這套「有漏道憑邊地、無漏道自地全覆蓋」的緣起結構並非某一地的特例，而是貫穿三界九地修證歷程的通則——一切法皆依同一因緣法則運作，正是諸法平等一如的體現。</td></tr><tr><td class="bh17p20-src">非有想非無想處離欲時，九無礙道、八解脫道中，但修一切無漏道。第九解脫道中，修三界善根及無漏道；除無心定。</td><td>到了非有想非無想處要脫離其貪欲時，在九個無礙道、八個解脫道之中，就只單純修習一切無漏道了。到了第九解脫道時，則要修習三界所有的善根以及無漏道；但要除去無心定（無想定、滅盡定等心識完全止息的定）。</td><td class="bh17p20-guan"><b>三界之頂·欣上厭下機制全面失效</b>——到了三界最高的非有想非無想處，已無更上之地可作為欣上厭下的參照，故此時「但修一切無漏道」，完全捨棄了有漏道依憑邊地漸次遷轉的模式，直接以無漏智慧全面對治；而「修三界善根、除無心定」更點明：即使廣攝三界一切善根，也必須排除那種斷滅心識的無心定，因為佛法所求並非斷滅式的空無，而是照見實相的般若空慧——此一結尾與第19品「凡夫於有頂處不得離欲」遙相呼應，唯有般若無漏道方能真正超越有頂之困境。</td></tr></tbody></table><p class="bh17p20-note">大智度論卷十七第20品「斷惑修得捨離九品煩惱」原文·白話·中觀對照。欲界煩惱九品、有漏道憑邊地漸次離欲、無漏道自地全面覆蓋、通則推廣至無所有處、非有想非無想處但修無漏道除無心定</p></div></div>
+<script id="wy-bh17p20-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p20Btn"),BOX=document.getElementById("bh17p20Box"),MODAL=document.getElementById("bh17p20Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=19;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p20Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p20Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P20:END-->
 </body></html>
