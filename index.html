@@ -3424,4 +3424,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P12:END-->
+<!--WY-BH17P13:BEGIN-->
+<style id="wy-bh17p13-css">
+.bh17p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p13-fabbox.show{display:block;}
+.bh17p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p13-modal.open{display:flex;}
+.bh17p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p13-close:hover{background:#dde2e6;}
+.bh17p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p13-tbl th,.bh17p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p13-tbl thead th:nth-child(1){width:32%;}.bh17p13-tbl thead th:nth-child(2){width:41%;}.bh17p13-tbl thead th:nth-child(3){width:27%;}
+.bh17p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p13-guan{background:#eef2f5;color:#37505f;}
+.bh17p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p13-tbl tbody tr:nth-child(even) td.bh17p13-guan{background:#e8eef2;}
+.bh17p13-tbl tbody tr:nth-child(even) td.bh17p13-qa{background:#e7ecdb;}
+.bh17p13-tbl b{color:#8b2500;}
+.bh17p13-guan b{color:#2f6b5a;}
+.bh17p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p13-fabbox{right:14px;}.bh17p13-tbl{font-size:11px;}.bh17p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p13-fabbox" id="bh17p13Box"><button class="bh17p13-btn" id="bh17p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p13-ic">譯</span><span class="bh17p13-ls"><span class="bh17p13-l1">本品 · 原文·白話·中觀</span><span class="bh17p13-l2">白話翻譯表</span></span></button></div><div class="bh17p13-modal" id="bh17p13Modal" role="dialog" aria-modal="true"><div class="bh17p13-card"><button class="bh17p13-close" id="bh17p13Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第13品 白話翻譯表（三禪·捨喜）</h3><p class="sub">大智度論卷十七·三禪捨喜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p13-tbl"><caption>三禪·捨喜 · 原文｜白話翻譯｜中觀概念（共2段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p13-src">「行者觀喜之過，亦如覺觀；隨所喜處，多喜多憂。所以者何？如貧人得寶，歡喜無量；一旦失之，其憂亦深，喜即轉而成憂，是故當捨。『離此喜故，行捨、念、智，受身樂。是樂聖人能得能捨，一心在樂，入第三禪。』」</td><td>行者觀察『喜』的過患，就如同先前觀察覺、觀的過患一樣；因為凡是心生歡喜之處，往往喜有多深，憂也隨之多深。這是什麼緣故呢？就好比一個窮人偶然得到珍寶，歡喜無量；可是一旦失去，他的憂愁也同樣深重——喜悅原來會轉變成憂愁，因此應當捨棄它。『遠離了這喜心之後，便修行捨、念、智三種功德，領受遍滿全身的安樂。這種安樂唯有聖人才能既領受又能捨離，一心安住於此樂之中，便進入了第三禪。』</td><td class="bh17p13-guan"><b>喜憂同源·物極必反顯緣起</b>——貧人得寶之喻說明喜悅與憂愁並非兩個各自獨立、自性別異的心理實體，而是同一因緣機制上的兩種顯現：喜之強度即預埋憂之深度，二者相待而立、互為緣起，並無「喜」自身可獨立常存之自性，故當洞察此理而捨離喜心，以求趣向更寂靜之樂。</td></tr><tr><td class="bh17p13-src">「『捨』者，捨喜心，不復悔。『念、智』者，既得三禪中樂，不令於樂生患。『受身樂』者，是三禪樂，遍身皆受。『聖人能得能捨』者，此樂世間第一，能生心著，凡夫少能捨者。以是故，佛說行慈果報，遍淨地中第一。」</td><td>所謂『捨』，是指捨棄了喜悅之心，不再因此而心生悔戀。所謂『念、智』，是指行者雖然已經證得三禪之中的安樂，卻仍以正念與智慧護持，不讓自己因耽著此樂而生出過患。所謂『領受遍身之樂』，是指這是三禪特有的安樂，能夠周遍全身、無處不受。所謂『聖人能夠既領受又能捨離』，是指這種安樂乃是世間至極的快樂，最容易使人生起貪著之心，凡夫很少有人能夠捨離它。因此之故，佛陀說修行慈心所得的果報，在遍淨天（三禪天）之中是最為殊勝第一的。</td><td class="bh17p13-guan"><b>能得能捨·不落斷常二邊</b>——聖者於世間第一之樂「能得」而不排斥受用，復「能捨」而不耽著滯留，正是中道不落有無二邊的具體實踐：若一味貪著即墮常見，若強行斷滅厭離即墮斷見，唯有以念、智二法如實觀照此樂之緣起無常，方能於受用之中同時保持不著之自在。</td></tr></tbody></table><p class="bh17p13-note">大智度論卷十七第13品「三禪捨喜」原文·白話·中觀三欄對照。貧人得寶喻明喜憂相待、捨喜心行捨念智三法、受身樂遍身皆受世間第一、聖人能得能捨顯中道不著二邊</p></div></div>
+<script id="wy-bh17p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p13Btn"),BOX=document.getElementById("bh17p13Box"),MODAL=document.getElementById("bh17p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P13:END-->
 </body></html>
