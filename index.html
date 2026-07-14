@@ -3220,4 +3220,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P8:END-->
+<!--WY-BH17P9:BEGIN-->
+<style id="wy-bh17p9-css">
+.bh17p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p9-fabbox.show{display:block;}
+.bh17p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p9-modal.open{display:flex;}
+.bh17p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p9-close:hover{background:#dde2e6;}
+.bh17p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p9-tbl th,.bh17p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p9-tbl thead th:nth-child(1){width:32%;}.bh17p9-tbl thead th:nth-child(2){width:41%;}.bh17p9-tbl thead th:nth-child(3){width:27%;}
+.bh17p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p9-guan{background:#eef2f5;color:#37505f;}
+.bh17p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p9-tbl tbody tr:nth-child(even) td.bh17p9-guan{background:#e8eef2;}
+.bh17p9-tbl tbody tr:nth-child(even) td.bh17p9-qa{background:#e7ecdb;}
+.bh17p9-tbl b{color:#8b2500;}
+.bh17p9-guan b{color:#2f6b5a;}
+.bh17p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p9-fabbox{right:14px;}.bh17p9-tbl{font-size:11px;}.bh17p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p9-fabbox" id="bh17p9Box"><button class="bh17p9-btn" id="bh17p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p9-ic">譯</span><span class="bh17p9-ls"><span class="bh17p9-l1">本品 · 原文·白話·中觀</span><span class="bh17p9-l2">白話翻譯表</span></span></button></div><div class="bh17p9-modal" id="bh17p9Modal" role="dialog" aria-modal="true"><div class="bh17p9-card"><button class="bh17p9-close" id="bh17p9Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第9品 白話翻譯表（何以唯禪稱波羅蜜）</h3><p class="sub">大智度論卷十七·何以唯禪稱波羅蜜 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p9-tbl"><caption>何以唯禪稱波羅蜜 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p9-qa">問曰：八背捨、八勝處、十一切入、四無量心、諸定三昧，如是等種種定，不名波羅蜜，何以但言禪波羅蜜？</td><td>有人問：八背捨、八勝處、十一切入、四無量心，以及種種其他的禪定三昧，這麼多種禪定法門都不被稱為「波羅蜜」，為什麼唯獨「禪」被稱為「禪波羅蜜」呢？</td><td class="bh17p9-guan"><b>總別之問·禪為何獨得波羅蜜之名</b>——此問點出一個結構性的疑惑：大智度論所述的各種定法極為繁多，各有其修證內涵與功德，為何獨獨「禪」一法被冠以「波羅蜜」（到彼岸）之尊稱，其餘諸定卻不然？這一問實際上是要求釐清「禪」與「禪波羅蜜」所指涉範圍的總別關係。</td></tr><tr><td class="bh17p9-qa">答曰：此諸定功德，都是思惟修。禪，秦言思惟修。言禪波羅蜜，一切皆攝。</td><td>回答說：以上所說的種種禪定功德，其實全部都可以歸屬於「思惟修」的範疇之中。而「禪」這個字，翻譯成秦地的語言，正是「思惟修」的意思。所以，只要說「禪波羅蜜」，其實就已經將一切禪定法門全部含攝在內了。</td><td class="bh17p9-guan"><b>禪攝一切定·別名還歸總相</b>——此答揭示了「禪」字在梵漢對譯上的深意：「禪」（禪那，Dhyāna）漢譯為「思惟修」，而八背捨、八勝處、十一切入等種種定法，就其修證本質而言，同樣都不離「思惟修」這一根本作用；因此「禪」並非與其他諸定並列的其中一種，而是含攝一切定法的總相之名，這正是以「總名」統攝「別相」的論述邏輯，說明何以獨獨「禪」能承載「波羅蜜」之尊稱。</td></tr><tr><td class="bh17p9-src">復次，禪最大如王，說禪則攝一切，說餘定則不攝。何以故？是四禪中智、定等而樂；未到地、中間地，智多而定少；無色界定多而智少，是處非樂。譬如車，一輪強，一輪弱，則不安隱；智、定不等，亦如是。</td><td>再者，「禪」猶如諸定之中最為尊貴的君王，只要說到「禪」，便自然含攝了一切定法；但若只說其他各別的定法，卻無法反過來含攝「禪」。這是為什麼呢？因為在四禪之中，智慧與禪定二者均等調和，所以能夠生起殊勝的禪悅之樂；而在未到地定、中間禪這些階段，則是智慧多而禪定的力量較少；至於無色界的種種定，則是禪定的力量強而智慧相對薄弱，這些境界都因此稱不上是真正圓滿安樂之處。這就好比一輛車子，若兩個輪子一強一弱、力量不均，車子就無法平穩安隱地前進；智慧與禪定若不能均等調和，道理也是一樣的。</td><td class="bh17p9-guan"><b>智定均等如車二輪·禪為中道均衡之典範</b>——此段以「車輪強弱不均則車不安隱」為喻，說明四禪之所以獨得「禪」之尊名而攝盡諸定，關鍵正在於智慧與禪定二者於此均等調和、不偏不倚；未到地、中間定智強定弱，無色定則定強智弱，皆屬失衡狀態。這一「均等」的要求，恰恰體現了中觀「中道」的精神——不偏於定（止）亦不偏於慧（觀），止觀雙運、定慧等持，方能成就真實安樂之處，此亦說明「禪」之所以為「度」（波羅蜜，到彼岸）的緣故：唯有均衡調和，才能真正渡至彼岸，而非停滯於任何一端的偏至境界。</td></tr><tr><td class="bh17p9-src">復次，是四禪處有四等心、五神通、背捨、勝處、一切處、無諍三昧、願智、頂禪、自在定、練禪、十四變化心、般舟般、諸菩薩三昧：首楞嚴等——略說則百二十；諸佛三昧：不動等——略說則百八，及佛得道、捨壽。如是等種種功德、妙定，皆在禪中。以是故，禪名波羅蜜，餘定不名波羅蜜。</td><td>再者，就在這四禪的境界之中，含藏著四無量心、五種神通、八背捨、八勝處、十一切入、無諍三昧、願智、頂禪、自在定、練禪、十四種變化心，乃至般舟三昧，以及種種菩薩三昧，例如首楞嚴三昧等——簡略來說便有一百二十種之多；還有諸佛才能證入的三昧，例如不動三昧等——簡略來說也有一百零八種，乃至於佛陀證得無上正等正覺之道、以及捨棄壽命等種種殊勝境界，全部都含攝在這四禪之中。像這樣種種功德妙定，全都出自於禪定的根基。正因為如此，唯獨「禪」被稱為「波羅蜜」，其餘各別的定法則不被稱為「波羅蜜」。</td><td class="bh17p9-guan"><b>禪為萬德之母·一法含攝萬法而不失一多相即</b>——此段以近乎窮舉的方式，羅列出從四無量心、五神通乃至諸佛三昧、成道捨壽等一百二十種、一百零八種殊勝境界，一一指明其根基皆「皆在禪中」；這種「一法含攝萬法」的論述結構，正體現了緣起法「一即一切，一切即一」的相即義理——禪並非與其他功德法門並列的一項，而是作為根本因地，含容並出生一切殊勝妙定與功德；「禪波羅蜜」之得名，正在於它是能夠讓行者由此岸真正渡至彼岸的根本動力所在，而非僅是諸多法門中平行的一支，此即本品標題「何以唯禪稱波羅蜜」的究竟解答。</td></tr></tbody></table><p class="bh17p9-note">大智度論卷十七第9品「何以唯禪稱波羅蜜」原文·白話·中觀三欄對照。禪即思惟修攝一切定、智定均等如車二輪、禪為萬德之母</p></div></div>
+<script id="wy-bh17p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p9Btn"),BOX=document.getElementById("bh17p9Box"),MODAL=document.getElementById("bh17p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p9Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P9:END-->
 </body></html>
