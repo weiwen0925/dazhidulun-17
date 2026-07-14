@@ -4546,4 +4546,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P34:END-->
+<!--WY-BH17P35:BEGIN-->
+<style id="wy-bh17p35-css">
+.bh17p35-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p35-fabbox.show{display:block;}
+.bh17p35-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p35-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p35-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p35-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p35-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p35-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p35-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p35-modal.open{display:flex;}
+.bh17p35-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p35-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p35-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p35-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p35-close:hover{background:#dde2e6;}
+.bh17p35-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p35-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p35-tbl th,.bh17p35-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p35-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p35-tbl thead th:nth-child(1){width:32%;}.bh17p35-tbl thead th:nth-child(2){width:41%;}.bh17p35-tbl thead th:nth-child(3){width:27%;}
+.bh17p35-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p35-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p35-guan{background:#eef2f5;color:#37505f;}
+.bh17p35-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p35-tbl tbody tr:nth-child(even) td.bh17p35-guan{background:#e8eef2;}
+.bh17p35-tbl tbody tr:nth-child(even) td.bh17p35-qa{background:#e7ecdb;}
+.bh17p35-tbl b{color:#8b2500;}
+.bh17p35-guan b{color:#2f6b5a;}
+.bh17p35-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p35-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p35-fabbox{right:14px;}.bh17p35-tbl{font-size:11px;}.bh17p35-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p35-fabbox" id="bh17p35Box"><button class="bh17p35-btn" id="bh17p35Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p35-ic">譯</span><span class="bh17p35-ls"><span class="bh17p35-l1">本品 · 原文·白話·中觀</span><span class="bh17p35-l2">白話翻譯表</span></span></button></div><div class="bh17p35-modal" id="bh17p35Modal" role="dialog" aria-modal="true"><div class="bh17p35-card"><button class="bh17p35-close" id="bh17p35Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第35品 白話翻譯表（不亂不味·愛禪相似）</h3><p class="sub">大智度論卷十七·不亂不味·愛禪相似 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p35-tbl"><caption>不亂不味·愛禪相似 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p35-src">復次，不亂、不味故，名禪波羅蜜。如佛告舍利弗：</td><td>再者，因為不散亂、不貪著禪味的緣故，才稱得上是禪波羅蜜。就如佛陀告訴舍利弗：</td><td class="bh17p35-guan"><b>不亂不味——禪波羅蜜的總綱定義</b>——此句是全品乃至整個禪波羅蜜章的邏輯拱心石：「不亂」關乎定力結構是否穩固不被侵蝕，「不味」關乎心念本體是否清淨不受染著，二者缺一都不能稱為「波羅蜜」（渡彼岸之定），而只是世間共法的禪定境界。</td></tr><tr><td class="bh17p35-src">「菩薩般若波羅蜜中住，具足禪波羅蜜，不亂、不味故。」</td><td>「菩薩安住在般若波羅蜜之中，之所以能具足圓滿禪波羅蜜，正是因為不散亂、不貪著禪味的緣故。」</td><td class="bh17p35-guan"><b>般若為體·禪波羅蜜為用——三輪體空的根本依據</b>——此偈點出「不亂、不味」之所以可能，根源在於菩薩「安住般若波羅蜜中」：正因為以般若空慧照見無能修之我、無所修之定、無可貪之禪悅，三輪體空，才能真正做到不被亂相反噬、不被味著繫縛，禪波羅蜜由此而圓滿具足。</td></tr><tr><td class="bh17p35-qa">問曰：云何名亂？</td><td>有人問：什麼叫做「亂」呢？</td><td class="bh17p35-guan"><b>設問破題——亂的定義探究</b>——此問承接上文「不亂」二字，引出下文對「亂」的精細分類剖析，是全品展開禪定病理學的起點。</td></tr><tr><td class="bh17p35-qa">答曰：亂有二種：一者、微，二者、麁。微者，有三種：一、愛多，二、慢多，三、見多。云何愛多？得禪定樂，其心樂著愛味。云何慢多？得禪定時，自謂難事已得，而以自高。云何見多？以我見等入禪定，分別取相，是實餘妄語。是三，名為微細亂。從是因緣，於禪定退，起三毒，是為麁亂。味者，初得禪定，一心愛著，是為味。</td><td>回答說：亂有兩種：第一種是微細的亂，第二種是粗重的亂。微細的亂又有三種：第一是愛多，第二是慢多，第三是見多。什麼叫做愛多呢？就是證得禪定之樂後，心中樂於貪著這份禪悅的滋味。什麼叫做慢多呢？就是證得禪定的時候，自認為已經完成了難以成就之事，因而生起自高自大之心。什麼叫做見多呢？就是帶著我見等種種邪見進入禪定，在定中分別取相，認為這才是真實，其餘的說法都是虛妄之語。這三種，就稱為微細的亂。由於這樣的因緣，使人從禪定中退失，進而生起貪瞋癡三毒，這就是粗重的亂。所謂「味」，指的是初次證得禪定時，一心貪愛執著禪悅的滋味，這就叫做「味」。</td><td class="bh17p35-guan"><b>微麁二亂·愛慢見三微細——禪定病理學的精細診斷</b>——微細亂的可怖之處在於它的「隱蔽性」：修行者外相上仍是「攝心堅住」，仍在定境之中，內在核心卻已被貪愛、我慢、邪見悄悄侵蝕。愛多可以法無我破之（禪悅本無自性可貪）、慢多可以人無我破之（本無能修禪定之實我）、見多亦可以法無我破之（定中所取之相本無所修之實）。凡夫往往要等到退定後三毒顯發的「麁亂」才驚覺已失，殊不知病根早在微細亂階段便已種下——微亂為因、麁亂為果，這正是本品「以定中修慧」為對治關鍵的緣由所在。</td></tr><tr><td class="bh17p35-qa">問曰：一切煩惱皆能染著，何以故但名愛為味？</td><td>有人問：一切的煩惱都能染污執著於境界，為什麼偏偏只把「愛」稱為「味」呢？</td><td class="bh17p35-guan"><b>設問深化——何以獨名愛為味</b>——此問進一步追問：瞋、癡、慢、疑等煩惱同樣能染著人心，何以本品獨獨挑出「愛」與禪定的「味」相提並論？由此引出下文「愛禪相似」這一全品最具洞察力的核心論點。</td></tr><tr><td class="bh17p35-qa">答曰：愛與禪相似。何以故？禪則攝心堅住，愛亦專著難捨。又初求禪時，心專欲得，愛之為性，欲樂專求，欲與禪定不相違故。既得禪定，深著不捨，則壞禪定。譬如施人物，必望現報，則無福德；於禪受味，愛著於禪，亦復如是。是故但以愛名味，不以餘結為味。</td><td>回答說：因為「愛」與「禪」在外相上十分相似。這是什麼緣故呢？禪定是把心攝持得堅固安住，而「愛」也同樣是專一執著、難以捨離；而且，最初求禪的時候，內心一意想要獲得禪定，這正是「愛」的本性——一心欲求、專一追求，這種欲求的心念與求禪定的心念並不相違背。可是一旦證得禪定之後，如果仍然對禪定的境界深深貪著、不肯捨離，反而會敗壞這份禪定。就好比布施他人財物，如果心中一定期望得到眼前的果報，這樣的布施便沒有真正的福德可言；同樣地，在禪定之中貪受禪悅的滋味、對禪定生起愛著之心，道理也是一樣的。因此才單獨把「愛」稱為「味」，而不把其餘的煩惱結使稱為「味」。</td><td class="bh17p35-guan"><b>愛禪相似——修貪與修定的致命混淆</b>——瞋、癡、慢、疑等煩惱的外相與禪定或明顯相違（如瞋恚躁動與禪定寂靜相反），唯獨「愛」與禪定外相上幾乎無二——同樣是「攝心堅住、專著難捨」的高頻專注狀態，因此修行人極易將「修貪」誤認為「修定」，渾然不覺。「以欲止欲，得止捨欲」正是化解此一陷阱的臨界紀律：初求禪時的善法欲是推動修行的盟友，可以借假修真；一旦禪定證得，這份欲求若不能及時放下，便從盟友翻轉為敵人，如過河拆橋般，功成即當捨離，方能真正做到「不味」，圓滿禪波羅蜜。</td></tr></tbody></table><p class="bh17p35-note">大智度論卷十七第35品「不亂不味·愛禪相似」原文·白話·中觀對照。不亂不味總綱定義、菩薩般若波羅蜜中住偈、微麁二亂之辨、愛慢見三種微細亂、愛與禪相似之故、以欲止欲得止捨欲</p></div></div>
+<script id="wy-bh17p35-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p35Btn"),BOX=document.getElementById("bh17p35Box"),MODAL=document.getElementById("bh17p35Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=34;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p35Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p35Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P35:END-->
 </body></html>
