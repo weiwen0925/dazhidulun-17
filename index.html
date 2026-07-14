@@ -3679,4 +3679,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P17:END-->
+<!--WY-BH17P18:BEGIN-->
+<style id="wy-bh17p18-css">
+.bh17p18-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p18-fabbox.show{display:block;}
+.bh17p18-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p18-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p18-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p18-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p18-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p18-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p18-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p18-modal.open{display:flex;}
+.bh17p18-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p18-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p18-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p18-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p18-close:hover{background:#dde2e6;}
+.bh17p18-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p18-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p18-tbl th,.bh17p18-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p18-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p18-tbl thead th:nth-child(1){width:32%;}.bh17p18-tbl thead th:nth-child(2){width:41%;}.bh17p18-tbl thead th:nth-child(3){width:27%;}
+.bh17p18-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p18-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p18-guan{background:#eef2f5;color:#37505f;}
+.bh17p18-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p18-tbl tbody tr:nth-child(even) td.bh17p18-guan{background:#e8eef2;}
+.bh17p18-tbl tbody tr:nth-child(even) td.bh17p18-qa{background:#e7ecdb;}
+.bh17p18-tbl b{color:#8b2500;}
+.bh17p18-guan b{color:#2f6b5a;}
+.bh17p18-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p18-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p18-fabbox{right:14px;}.bh17p18-tbl{font-size:11px;}.bh17p18-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p18-fabbox" id="bh17p18Box"><button class="bh17p18-btn" id="bh17p18Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p18-ic">譯</span><span class="bh17p18-ls"><span class="bh17p18-l1">本品 · 原文·白話·中觀</span><span class="bh17p18-l2">白話翻譯表</span></span></button></div><div class="bh17p18-modal" id="bh17p18Modal" role="dialog" aria-modal="true"><div class="bh17p18-card"><button class="bh17p18-close" id="bh17p18Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第18品 白話翻譯表（非有想非無想·三種無想）</h3><p class="sub">大智度論卷十七·非有想非無想處與三種無想 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p18-tbl"><caption>非有想非無想 · 三種無想 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p18-src">無所有處緣受、想、行、識，如病、如癰、如瘡、如刺，無常、苦、空、無我，欺誑和合而有，非實有也。如是思惟，無想處如癰，有想處如病、如癰、如瘡、如刺；第一妙處，是非有想非無想處。</td><td>無所有處這一境界，若仔細觀察，其中所緣的受、想、行、識四蘊，仍如同疾病、如同癰腫、如同瘡瘍、如同芒刺一般；四蘊是無常、是苦、是空、是無我，只是因緣欺誑和合才暫時顯現為有，並非真實存在。如此思惟之後便知：無想之處境猶如癰瘍（過於斷滅），而仍有想之處境又如同疾病、癰腫、瘡瘍、芒刺（過於粗重）；唯有此中的第一殊妙之處，才是『非有想非無想處』。</td><td class="bh17p18-guan"><b>不落二邊·世間禪定頂峰仍是有為緣起</b>——「無想處如癰、有想處如病」揭示行者在無色界最高處所面臨的兩難：全然斷滅想心（無想）近於死寂，仍保有想心（有想）則落入粗重生滅；「非有想非無想」看似巧妙地避開兩端，模擬了中道不落兩邊的形式，但依中觀觀之，此仍是相待而立、依因緣造作而有的有為法，並非真正超越生滅的中道實相，故下文問答隨即點破其名實之間的落差。</td></tr><tr><td class="bh17p18-qa">問曰：非有想非無想處，有受、想、行、識，云何言非有想非無想？</td><td>有人問道：非有想非無想處之中，其實仍存在著受、想、行、識四蘊，為什麼卻說它是『非有想非無想』呢？</td><td class="bh17p18-guan"><b>名實落差之問——四蘊俱在何以稱『非有想』</b>——此問精準捕捉了「非有想非無想」一名背後的矛盾：若四蘊仍在，理當仍屬「有想」之列，何以獨獨於此立一「非有想非無想」的特殊名相？此問正為下文揭穿凡夫「以名為實」之誤認鋪路。</td></tr><tr><td class="bh17p18-qa">答曰：是中有想微細難覺故，謂為「非有想」；有想故「非無想」。凡夫心謂得諸法實相，是為涅槃；佛法中雖知有想，因其本名，名為「非有想非無想處」。</td><td>回答說：因為此處的想心極其微細、難以覺察，所以稱之為『非有想』；但畢竟仍有想心存在，所以又稱之為『非無想』。凡夫誤以為證得此境便是得到了諸法的真實相，將它當作涅槃；然而在佛法之中，雖然明白此處其實仍有微細之想存在，卻依循世間對這境界原有的稱呼，仍舊稱它為『非有想非無想處』。</td><td class="bh17p18-guan"><b>相待假名·微細難覺非究竟寂滅</b>——「微細難覺」四字揭示：非有想非無想之名，僅是相待於下界粗想、上與滅盡定相較而立的比較級假名，並非指此處真無想心生滅；凡夫執此假名為諸法實相、視為涅槃，正是以假名為究竟的根本誤認，佛法雖沿用此一世間稱呼，卻清楚照見其仍屬有漏有為、依因緣而生的緣起法。</td></tr><tr><td class="bh17p18-qa">問曰：云何是無想？</td><td>有人問道：什麼是『無想』？</td><td class="bh17p18-guan"><b>追問滅心之異——同名之下猶待細判</b>——此問承上，將辨析焦點從「境界名實」轉向「修法類別」：同樣標舉滅除心識，其實際內涵並不單一，此問為下文區分凡聖修法之邪正埋下伏筆。</td></tr><tr><td class="bh17p18-qa">答曰：無想有三種：一、無想定，二、滅受定，三、無想天。凡夫人欲滅心，入無想定；佛弟子欲滅心，入滅受定。</td><td>回答說：無想共有三種：第一是無想定，第二是滅受想定，第三是無想天。凡夫之人想要滅除心識，便修入無想定；佛的弟子想要滅除心識，則是修入滅受想定。</td><td class="bh17p18-guan"><b>同名滅心·凡聖邪正攸分</b>——同樣標舉「滅心」，凡夫所修的無想定、與聖弟子所修的滅受想定，其發心與見地卻判若雲泥：凡夫誤以斷滅想心為究竟解脫，落入外道斷見；聖弟子則於般若正見攝持之下，善巧暫伏受想以入深定，不執此為實有涅槃。此一問答提醒行者：修行方法縱使表相相似，若缺乏中觀般若正見的攝持，仍可能與正道背道而馳——判別邪正的關鍵，終究在於「見地」而非「境界」。</td></tr></tbody></table><p class="bh17p18-note">大智度論卷十七第18品「非有想非無想三種無想」原文·白話·中觀對照。無所有處緣四蘊如病如癰如瘡如刺、非有想非無想處名實之辨、想微細難覺、無想定滅受定無想天三種無想凡聖邪正之別</p></div></div>
+<script id="wy-bh17p18-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p18Btn"),BOX=document.getElementById("bh17p18Box"),MODAL=document.getElementById("bh17p18Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=17;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p18Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p18Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P18:END-->
 </body></html>
