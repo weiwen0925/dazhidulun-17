@@ -3016,4 +3016,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P4:END-->
+<!--WY-BH17P5:BEGIN-->
+<style id="wy-bh17p5-css">
+.bh17p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p5-fabbox.show{display:block;}
+.bh17p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p5-modal.open{display:flex;}
+.bh17p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p5-close:hover{background:#dde2e6;}
+.bh17p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p5-tbl th,.bh17p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p5-tbl thead th:nth-child(1){width:32%;}.bh17p5-tbl thead th:nth-child(2){width:41%;}.bh17p5-tbl thead th:nth-child(3){width:27%;}
+.bh17p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p5-guan{background:#eef2f5;color:#37505f;}
+.bh17p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p5-tbl tbody tr:nth-child(even) td.bh17p5-guan{background:#e8eef2;}
+.bh17p5-tbl tbody tr:nth-child(even) td.bh17p5-qa{background:#e7ecdb;}
+.bh17p5-tbl b{color:#8b2500;}
+.bh17p5-guan b{color:#2f6b5a;}
+.bh17p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p5-fabbox{right:14px;}.bh17p5-tbl{font-size:11px;}.bh17p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p5-fabbox" id="bh17p5Box"><button class="bh17p5-btn" id="bh17p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p5-ic">譯</span><span class="bh17p5-ls"><span class="bh17p5-l1">本品 · 原文·白話·中觀</span><span class="bh17p5-l2">白話翻譯表</span></span></button></div><div class="bh17p5-modal" id="bh17p5Modal" role="dialog" aria-modal="true"><div class="bh17p5-card"><button class="bh17p5-close" id="bh17p5Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第5品 白話翻譯表（呵味）</h3><p class="sub">大智度論卷十七·呵味 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p5-tbl"><caption>呵味 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p5-src">云何呵味？當自覺悟：「我但以貪著美味故，當受眾苦，洋銅灌口，噉燒鐵丸；若不觀食法，嗜心堅著，墮不淨虫中。」</td><td>什麼叫做呵責味欲呢？應當自己覺悟省思：「我如果只因貪著美味的緣故，將來必定要承受種種苦報：或被滾燙的銅汁灌入口中，或被迫吞食燒紅的鐵丸；如果不能以正觀的方法看待飲食，任由貪嗜之心堅固執著，就會墮落投生到專食不淨之物的蟲類之中。」</td><td class="bh17p5-guan"><b>雙層業報·地獄與畜生同源一念</b>——短短數語揭示味欲貪愛能導向兩條截然不同的下墮之路：向上是地獄道洋銅燒鐵的猛烈燒殺，向下是畜生道嗜心堅著的沉淪物化；兩者皆由「貪著美味」這同一心理動作所推動，差別僅在業力密度與時間長短的不同——味覺的執著實為地獄與畜生兩道共通的引信。</td></tr><tr><td class="bh17p5-src">如一沙彌心常愛酪，諸檀越餉僧酪時，沙彌每得殘分，心中愛著，樂喜不離；命終之後，生此殘酪瓶中。沙彌師得阿羅漢道，僧分酪時，語言：「徐徐！莫傷此愛酪沙彌！」諸人言：「此是虫，何以言愛酪沙彌？」答言：「此虫本是我沙彌，但坐貪愛殘酪故，生此瓶中。」師得酪分，虫在中來。師言：「愛酪人！汝何以來？」即以酪與之。</td><td>譬如有一位沙彌心中常常喜愛乳酪，每當信眾供養僧眾乳酪時，這位沙彌總能分得殘餘的部分，他心中對此十分愛著，歡喜之情始終不曾離開；命終之後，他就投生到了裝殘酪的瓶罐中，成了瓶中的蟲子。這位沙彌的師父後來證得了阿羅漢道，有一次僧眾分乳酪時，師父便說：「慢一點！不要傷到這個愛酪的沙彌！」眾人問道：「這只是一隻蟲，怎麼會說是愛酪的沙彌呢？」師父回答說：「這隻蟲本來就是我的沙彌，只因為貪愛殘留的乳酪，所以才投生到這個瓶子裡。」等師父分到自己那份乳酪時，那隻蟲便爬到了裡面。師父便說：「愛酪的人啊！你怎麼又來了？」隨即把乳酪給了牠。</td><td class="bh17p5-guan"><b>微念鑄形·心念如模具</b>——沙彌並無偷盜、犯戒之類的重大惡行，只是每次拿到剩餘乳酪時心中多了一點愛著與喜樂，這一點點微細的念頭，就足以在命終之後決定他下一期生命的形態；可見致命的不是「吃」這個動作本身，而是持續不斷、反覆熏習的那一絲貪念——念頭的方向與頻率，正是業力鑄造生命形態的模具與鋼水。</td></tr><tr><td class="bh17p5-src">復次，如一國，王名月分。王有太子，愛著美味，王守園者日送好菓。園中有一大樹，樹上有鳥養子，常飛至香山中，取好香果以養其子；眾子爭之，一果墮地，守園人晨朝見之，奇其非常，即送與王。王珍此果香色殊異，太子見之便索，王愛其子，即以與之。太子食果，得其氣味，染心深著，日日欲得；王即召園人，問其所由……園人至得果處，見有鳥巢，知鳥銜來，翳身樹上，伺欲取之；鳥母來時，即奪得果送，日日如是。鳥母怒之，於香山中取毒果，其香、味、色全似前者。園人奪得輸王，王與太子食之，未久身肉爛壞而死。着味如是，有失身之苦。</td><td>再者，譬如有一個國家，國王名叫月分。國王有一位太子，特別貪愛美味，國王便派守園人每天送上好的果子供他享用。園中有一棵大樹，樹上有隻鳥在養育幼雛，牠時常飛到香山之中，銜取美好的香果來餵養小鳥；小鳥們爭搶果子時，有一顆掉落地面，守園人清晨見到，覺得這果子非比尋常，便呈送給國王。國王見這果子香氣色澤格外殊異，十分珍愛，太子見了便索取，國王疼愛太子，就把果子給了他。太子吃了這果子，嚐到那奇異的氣味後，染著之心愈發深重，天天都想再吃到；國王於是召來守園人，詢問果子的來源……守園人來到得果之處，發現樹上有個鳥巢，知道是鳥銜來的果子，便隱身在樹上，伺機想要奪取；等鳥母飛回來時，便搶奪牠銜來的果子送去進獻，天天如此。鳥母因此十分憤怒，便到香山中取來一顆毒果，這果子的香氣、滋味、色澤全都與先前的果子一模一樣。守園人不知情，又奪來獻給國王，國王便拿給太子吃了，沒過多久，太子便渾身腐爛而死。貪著美味竟到如此地步，招致了喪身的苦果。</td><td class="bh17p5-guan"><b>味覺渴求向外擴散·緣起外相足以致命</b>——太子一人對美味的貪愛，從自身、家、國，一路向外擴散至整個生態系統，最終在意想不到之處——鳥母的怒火——引爆反撲；色香味俱全的毒果與先前的美果外相全然無異，正說明感官所貪著的「相」本無自性可憑，一旦執取外相為實有而不加揀擇，緣起的假合之相足以在轉瞬之間奪去性命，這正是「相待假名·真假不二」在味欲上最慘烈的印證。</td></tr></tbody></table><p class="bh17p5-note">大智度論卷十七第5品「呵味」原文·白話·中觀三欄對照。呵味：沙彌愛酪心念鑄形、月分太子毒果致命</p></div></div>
+<script id="wy-bh17p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p5Btn"),BOX=document.getElementById("bh17p5Box"),MODAL=document.getElementById("bh17p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p5Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P5:END-->
 </body></html>
