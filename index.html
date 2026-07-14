@@ -2914,4 +2914,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P2:END-->
+<!--WY-BH17P3:BEGIN-->
+<style id="wy-bh17p3-css">
+.bh17p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p3-fabbox.show{display:block;}
+.bh17p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p3-modal.open{display:flex;}
+.bh17p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p3-close:hover{background:#dde2e6;}
+.bh17p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p3-tbl th,.bh17p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p3-tbl thead th:nth-child(1){width:32%;}.bh17p3-tbl thead th:nth-child(2){width:41%;}.bh17p3-tbl thead th:nth-child(3){width:27%;}
+.bh17p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p3-guan{background:#eef2f5;color:#37505f;}
+.bh17p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p3-tbl tbody tr:nth-child(even) td.bh17p3-guan{background:#e8eef2;}
+.bh17p3-tbl tbody tr:nth-child(even) td.bh17p3-qa{background:#e7ecdb;}
+.bh17p3-tbl b{color:#8b2500;}
+.bh17p3-guan b{color:#2f6b5a;}
+.bh17p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p3-fabbox{right:14px;}.bh17p3-tbl{font-size:11px;}.bh17p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p3-fabbox" id="bh17p3Box"><button class="bh17p3-btn" id="bh17p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p3-ic">譯</span><span class="bh17p3-ls"><span class="bh17p3-l1">本品 · 原文·白話·中觀</span><span class="bh17p3-l2">白話翻譯表</span></span></button></div><div class="bh17p3-modal" id="bh17p3Modal" role="dialog" aria-modal="true"><div class="bh17p3-card"><button class="bh17p3-close" id="bh17p3Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第3品 白話翻譯表（棄色呵聲）</h3><p class="sub">大智度論卷十七·棄色呵聲 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p3-tbl"><caption>棄色呵聲 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p3-src">云何棄色？觀色之患，若人著色，諸結使火盡皆熾然，燒害人身。如火燒金銀，煮沸熱蜜，雖有色味，燒身爛口，急應捨之。若人染著妙色、美味，亦復如是。</td><td>什麼叫做棄捨色欲呢？要觀察色欲的過患：如果人貪著色欲，種種煩惱結使之火便會全部熾盛燃燒，燒灼傷害自身。就好比熔煉金銀的烈火、煮沸滾燙的蜂蜜，雖然色澤誘人、看似有滋味，一旦碰觸便會燒傷身體、燙爛口舌，必須趕緊捨棄。人若染著於美妙的色相、美味，也是同樣的道理。</td><td class="bh17p3-guan"><b>火燒金銀之喻·誘人之相即傷身之因</b>——熔金煮蜜色澤誘人卻能燒身爛口，精準點出「色」的迷惑性正在於外相之美與內在傷害同時並存、無法分割；貪著色欲者往往只見其誘人之相，而未見色相緣生無實、觸之即傷的一體兩面，故須「急應捨之」，不容遲疑權衡。</td></tr><tr><td class="bh17p3-src">復次，好惡在人，色無定也。何以知之？如遙見所愛之人，即生喜愛心；若遙見怨家惡人，即生怒害心；若見中人，則無怒無喜。若欲棄此喜怒，當除邪念及色，一時俱捨；譬如洋金燒身，若欲除之，不得但欲棄火而留金，要當金、火俱棄。如頻婆娑羅王，以色故身入敵國，獨在婬女阿梵婆羅房中。憂填王以色染故，截五百仙人手足。如是等種種因緣，是名呵色欲。</td><td>再者，美好或醜惡其實是取決於觀看的人，色相本身並沒有固定不變的標準。怎麼知道呢？譬如遠遠望見自己所喜愛的人，便立刻生起歡喜愛戀之心；若遠遠望見仇怨憎惡的人，便立刻生起憤怒加害之心；若望見與己無關的中等人，便既不生怒也不生喜。如果想要捨棄這種因人而異的喜怒，就應當同時除去邪念與色相的執取，兩者一併捨棄；就像熔化的金汁燒灼身體，若想解除這種傷害，不能只想捨棄火而留下金汁，必須把金汁和火一併捨棄才行。譬如頻婆娑羅王，為了貪戀色欲，親身潛入敵國，獨自藏身在淫女阿梵婆羅的房中；憂填王也因貪染色欲，竟砍斷五百位仙人的手足。因為種種這樣的因緣緣故，這就叫做呵責色欲。</td><td class="bh17p3-guan"><b>色無定相·好惡唯心所現</b>——同一色相，對所愛者生喜、對怨家生怒、對中人則無喜無怒，正顯示「色」本身並無固定的美醜好惡自性，一切好惡評價皆是觀者自心煩惱習氣的投射；「金火俱棄」之喻更進一步指出，若只想保留色相的誘人表象而單獨去除貪愛的火焰，終究不可得——能所必須一併照破，方合乎「色無定也」的緣起無自性義。</td></tr><tr><td class="bh17p3-src">云何呵聲？聲相不停，暫聞即滅。愚癡之人，不解聲相無常變失故，於音聲中妄生好樂；於已過之聲念而生著。</td><td>什麼叫做呵責聲欲呢？聲音的相狀從不停留，一經聽聞便即刻消逝滅去。愚癡的人不明白聲音的相狀是無常變異、剎那消失的道理，因此在音聲之中虛妄地生起貪愛喜樂之心；甚至對已經消逝過去的聲音，仍念念不忘而生起執著。</td><td class="bh17p3-guan"><b>聲相不停·於滅無所著</b>——此段直指聲音「暫聞即滅」的無常本質：所貪著的聲音其實在生起的當下即已滅去，行者所執著的只是心中對「已過之聲」的記憶投影，並非有一個真實常住的聲音可得；這是後文「觀聲念念生滅，前後不俱」中觀分析的伏筆。</td></tr><tr><td class="bh17p3-src">如五百仙人在山中住，甄陀羅女於雪山池中浴；聞其歌聲，即失禪定，心醉狂逸，不能自持。譬如大風吹諸林樹，聞此細妙歌聲，柔軟清淨，生邪念想，是故不覺心狂；今世失諸功德，後世當墮惡道！有智之人，觀聲念念生滅，前後不俱，無相及者；作如是知，則不生染著。若斯人者，諸天音樂尚不能亂，何況人聲？如是等種種因緣，是名呵聲欲。</td><td>譬如有五百位仙人居住在山中修行，甄陀羅女在雪山池中沐浴時歌唱；仙人們聽聞了她的歌聲，立刻喪失了禪定，心神迷醉、放蕩失控，無法自我克制。就好像狂風吹動林間樹木一般，仙人們一聽聞這細膩美妙、柔軟清淨的歌聲，便生起邪念妄想，因此不知不覺就心神狂亂；如此一來，今世喪失了種種修行的功德，來世恐怕還要墮入惡道！有智慧的人，能夠觀察聲音是念念生滅、前後不能同時並存、彼此毫無關聯的，能作如此觀照了知，便不會生起染著之心。像這樣的人，即使是諸天的音樂都不能擾亂他的心，何況是人間的聲音呢？因為這種種因緣的緣故，這就叫做呵責聲欲。</td><td class="bh17p3-guan"><b>念念生滅·前後不俱破聲執</b>——五百仙人因一時歌聲而盡失多年禪定功夫，反顯聲塵的殺傷力不在聲音本身的強弱，而在心念是否安住於「念念生滅、前後不俱」的如實觀照；能如此觀照者，聲音生滅相續而不留痕跡，貪染便無從生起——這正是以中觀的剎那生滅觀，從根本上拆解對聲音的執取，而非僅止於行為上的迴避。</td></tr></tbody></table><p class="bh17p3-note">大智度論卷十七第3品「棄色呵聲」原文·白話·中觀三欄對照。棄色呵聲：色無定相好惡唯心、聲相念念生滅前後不俱</p></div></div>
+<script id="wy-bh17p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p3Btn"),BOX=document.getElementById("bh17p3Box"),MODAL=document.getElementById("bh17p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p3Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P3:END-->
 </body></html>
