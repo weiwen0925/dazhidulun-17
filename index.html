@@ -4036,4 +4036,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH17P24:END-->
+<!--WY-BH17P25:BEGIN-->
+<style id="wy-bh17p25-css">
+.bh17p25-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh17p25-fabbox.show{display:block;}
+.bh17p25-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh17p25-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh17p25-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh17p25-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh17p25-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh17p25-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh17p25-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh17p25-modal.open{display:flex;}
+.bh17p25-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh17p25-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh17p25-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh17p25-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh17p25-close:hover{background:#dde2e6;}
+.bh17p25-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh17p25-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh17p25-tbl th,.bh17p25-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh17p25-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh17p25-tbl thead th:nth-child(1){width:32%;}.bh17p25-tbl thead th:nth-child(2){width:41%;}.bh17p25-tbl thead th:nth-child(3){width:27%;}
+.bh17p25-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh17p25-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh17p25-guan{background:#eef2f5;color:#37505f;}
+.bh17p25-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh17p25-tbl tbody tr:nth-child(even) td.bh17p25-guan{background:#e8eef2;}
+.bh17p25-tbl tbody tr:nth-child(even) td.bh17p25-qa{background:#e7ecdb;}
+.bh17p25-tbl b{color:#8b2500;}
+.bh17p25-guan b{color:#2f6b5a;}
+.bh17p25-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh17p25-note b{color:#8b2500;}
+@media(max-width:900px){.bh17p25-fabbox{right:14px;}.bh17p25-tbl{font-size:11px;}.bh17p25-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh17p25-fabbox" id="bh17p25Box"><button class="bh17p25-btn" id="bh17p25Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh17p25-ic">譯</span><span class="bh17p25-ls"><span class="bh17p25-l1">本品 · 原文·白話·中觀</span><span class="bh17p25-l2">白話翻譯表</span></span></button></div><div class="bh17p25-modal" id="bh17p25Modal" role="dialog" aria-modal="true"><div class="bh17p25-card"><button class="bh17p25-close" id="bh17p25Close" type="button" aria-label="關閉">×</button><h3>卷十七 · 第25品 白話翻譯表（頂禪·願智·四辯·無諍三昧）</h3><p class="sub">大智度論卷十七·頂禪·願智·四辯·無諍三昧 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh17p25-tbl"><caption>頂禪·願智·四辯·無諍三昧 白話翻譯表 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh17p25-src">復次，諸禪中有頂禪，何以故名「頂」？有二種阿羅漢：壞法、不壞法。不壞法阿羅漢，於一切深禪定得自在，能起頂禪。得是頂禪，能轉壽為富，轉富為壽。</td><td>再者，在所有的禪定當中有一種稱為「頂禪」的禪定，為什麼稱它為「頂」呢？阿羅漢有兩種：壞法阿羅漢與不壞法阿羅漢。不壞法阿羅漢對一切深妙的禪定都能得心自在，因此能夠生起頂禪。證得這種頂禪之後，便能將壽命轉為財富、也能將財富轉為壽命，隨心自在轉換。</td><td class="bh17p25-guan"><b>頂禪自在——壽富互轉的表法</b>——頂禪是深禪定中最極致、最自在的一種，能「轉壽為富、轉富為壽」看似違反因果常規的神通，實則彰顯：業報所感的壽命與福報，在究竟自在的禪定心力面前，並非兩種各自獨立、恆常不變的實體，而是可依因緣相互轉化的假名施設。這正是中觀「諸法無自性、隨緣可轉」的具體示現——若壽富真有固定自性，便不可能互轉；正因其空無自性，才能在深定的自在力中彼此轉換。</td></tr><tr><td class="bh17p25-src">復有願智、四辯、無諍三昧。願智者，願欲知三世事，隨所願則知。此願智二處攝：欲界、第四禪。四辯者，法辯、辭辯，二處攝：欲界、初禪；餘二辯，九地攝：欲界、四禪、四無色定。無諍三昧者，令他心不起諍，五處攝：欲界及四禪。</td><td>除此之外還有願智、四辯、無諍三昧三種功德。「願智」是指依自己的願力而想知曉過去、現在、未來三世之事，只要一發願便能知曉，這種願智由兩處禪定所含攝：欲界與第四禪。「四辯」是指法辯與辭辯兩種，由兩處所含攝：欲界與初禪；其餘義辯、樂說辯兩種，則由九地所含攝：欲界、四禪、四無色定。「無諍三昧」是指能使他人心中不生起諍鬥之心，由五處所含攝：欲界以及四禪。</td><td class="bh17p25-guan"><b>四功德的地界劃分——現象嚴密而本體皆空</b>——本段以阿毗達磨式的精密分類，將願智、四辯、無諍三昧各自歸屬於不同的禪定地，欲界、初禪乃至四無色定，呈現出高度系統化的現象學矩陣。然而，這種分地攝屬的嚴密規律，正是中觀所欲穿透的表層——法辯、辭辯只在下二地起作用而義辯、樂說辯能遍及九地，看似有優劣高下之別，實則皆是依因緣施設的假名功能，本身並無固定不變的自性；唯有先如實了知這分位森然的「有」，才能進一步契入「畢竟空」而不落入斷滅或虛無。</td></tr><tr><td class="bh17p25-src">願智，二處攝：欲界及第四禪。復次，願智者，隨所欲知，隨願皆得；以其願心，入第四禪，還從禪起，所念皆知。</td><td>願智，由兩處禪定所含攝：欲界以及第四禪。再進一步說，願智是指只要行者想要知道什麼，隨著他所發的願都能夠得知；行者以這種願欲之心進入第四禪，再從禪定中出定之後，凡是心中所念想要了知的事，便都能夠知曉。</td><td class="bh17p25-guan"><b>願心與禪定的因緣和合——知而不執</b>——願智的成就必須依「入定—出定」的完整歷程：先以願心入第四禪蓄積定力，再從定中起而運用，方能「所念皆知」。這說明神通智慧並非憑空而生的實體能力，而是願心、禪定、出入次第等眾多因緣和合所顯發的作用，因緣具足即能起用，因緣不具則不現前，正是「因緣生法，我說即是空」的具體寫照。</td></tr><tr><td class="bh17p25-src">四辯中，法辯、辭辯，二處攝：欲界、初禪；餘二辯，九地攝：欲界、未到地、初禪、禪中間、二禪、三禪、四禪、空處、識處。</td><td>在四辯之中，法辯與辭辯這兩種，由兩處禪定所含攝：欲界與初禪；其餘的義辯、樂說辯兩種，則由九地所含攝：欲界、未到地、初禪、禪中間、二禪、三禪、四禪、空處、識處。</td><td class="bh17p25-guan"><b>言語的邊界與義理的無邊——尋伺為語言之氣層</b>——法辯、辭辯必須仰賴語言文字方能運作，因此只局限在有尋有伺的欲界、初禪二地；而義辯、樂說辯所依託的是義理的直觀與善巧宣說之力，不受尋伺語言的限制，故能遍及尋伺漸次微細乃至泯滅的九地。這正顯示「能詮」與「所詮」之間層次有別而缺一不可的中道關係——若執語言為究竟，則落入戲論；若廢棄語言不用，則無以利益眾生、無以顯示義理，唯有善巧運用語言而不執著語言之實有，才是二諦圓融之道。</td></tr><tr><td class="bh17p25-src">無諍三昧，五處攝：欲界及四禪。阿羅漢，觀眾生心行，知其所念，為不令眾生於我生瞋恚諍心故，常行無諍三昧。</td><td>無諍三昧，由五處禪定所含攝：欲界以及四禪，即初禪、二禪、三禪、四禪。證得無諍三昧的阿羅漢，能夠觀察眾生內心的種種心行，了知他們心裡所思所念，為了不讓眾生因為自己的緣故而生起瞋恨、諍鬥之心，所以恆常修行這種無諍三昧。</td><td class="bh17p25-guan"><b>無諍——以空觀化解人我對立</b>——無諍三昧的根本用意，不在自身入定得樂，而在體察他人心念、預先化解可能因己而起的瞋恚諍鬥，這是將禪定的自受用力轉為利他的悲心妙用。從中觀角度看，「諍」的根源正是對「我」與「他」、「是」與「非」的實有執著；阿羅漢能常行無諍，是因徹見人我對待本無自性，故能不與眾生心念相牴牾、隨順因緣而消融衝突於未萌，這正是般若空觀落實於人際互動的具體體現。</td></tr></tbody></table><p class="bh17p25-note">大智度論卷十七第25品「頂禪·願智·四辯·無諍三昧」原文·白話·中觀對照。不壞法阿羅漢起頂禪轉壽為富、願智二處攝、四辯地界寬窄有別、無諍三昧觀心不令生瞋</p></div></div>
+<script id="wy-bh17p25-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh17p25Btn"),BOX=document.getElementById("bh17p25Box"),MODAL=document.getElementById("bh17p25Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=24;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c17p25Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh17p25Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH17P25:END-->
 </body></html>
